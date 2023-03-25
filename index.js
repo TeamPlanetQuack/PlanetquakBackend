@@ -2,8 +2,8 @@ require('dotenv').config();
 const{PORT=8080}=process.env
 const express =require('express');
 const server = express();
-const apiRouter = require('./api');
-const {client}= require('./db/client');
+// const apiRouter = require('./api');
+const {client}= require('./DB/client');
 client.connect();
 
 const morgan= require('morgan');
@@ -19,7 +19,7 @@ server.use((req,res, next)=>{
   next();
 })
 
-server.use('/api', apiRouter);
+// server.use('/api', apiRouter);
 
 server.listen(PORT,()=>{
   console.log('The server is up on port', PORT)
