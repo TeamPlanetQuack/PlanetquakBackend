@@ -19,16 +19,14 @@ async function createPlanet({
   sun_distance,
   type,
   moon_num,
-  fact_one,
-  fact_two,
-  fact_three,
+  facts,
 }) {
   try {
     const {
       rows: [planet],
     } = await client.query(
-      `INSERT into planets(name, name_origin, radius, orbit, rotation, sun_distance, type, moon_num, fact_one, fact_two, fact_three)
-        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
+      `INSERT into planets(name, name_origin, radius, orbit, rotation, sun_distance, type, moon_num, facts)
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
         RETURNING *;
         `,
       [
@@ -40,9 +38,7 @@ async function createPlanet({
         sun_distance,
         type,
         moon_num,
-        fact_one,
-        fact_two,
-        fact_three,
+        facts,
       ]
     );
 

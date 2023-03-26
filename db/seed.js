@@ -1,7 +1,7 @@
 const { client } = require("./client");
 const bcrypt = require("bcrypt");
 const {createPlanet} = require("./index");
-const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName } = require("./moons");
+const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName, getMoonsSmallerThan, getMoonsBiggerThan, countMoonsByPlanetId } = require("./moons");
 
 
 
@@ -28,7 +28,7 @@ async function createTables(){
     CREATE TYPE planet_name AS ENUM ('Mercury', 'Mars', 'Earth', 'Venus', 'Jupiter', 'Saturn', 'Uranus', 'Neptune');
     CREATE TYPE planet_type AS ENUM ('gas', 'rocky');
 
-    CREATE TABLE planets(
+    CREATE TABLE planets (
       id SERIAL PRIMARY KEY,
       name planet_name,
       name_origin VARCHAR(255),
@@ -38,10 +38,8 @@ async function createTables(){
       sun_distance VARCHAR(255),
       type planet_type,
       moon_num INT NOT NULL DEFAULT(0),
-      fact_one TEXT,
-      fact_two TEXT,
-      fact_three TEXT
-    );
+      facts TEXT[]
+  );
 
     CREATE TABLE moons (
       id SERIAL PRIMARY KEY,
@@ -72,9 +70,7 @@ async function createInitialPlanets() {
       sun_distance: "58 million km",
       type: "rocky",
       moon_num: 0,
-      fact_one: "Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.",
-      fact_two: "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.",
-      fact_three: "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "
+      facts: ["Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.", "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.", "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "]
     })
 
     const Venus = await createPlanet({
@@ -86,9 +82,7 @@ async function createInitialPlanets() {
       sun_distance: "108 million km",
       type: "rocky",
       moon_num: 0,
-      fact_one: "Venus has an atmosphere thick with greenhouse gases, such as carbon dioxide. Venus is the hottest planet. Even though Mercury is closer to the sun, Venus has an atmosphere that holds on to the heat from the sun making it the most hot.",
-      fact_two: "Venuss surface is covered in active volcanoes.",
-      fact_three: "Venus is the only planet that rotates counterclockwise around its own axis. This means that sunset and sunrise would be opposite of what we see on Earth. The sun would rise in the west and set in the east. It also rotates very slowly making a day on Venus longer than a year on Venus."
+      facts: ["Venus has an atmosphere thick with greenhouse gases, such as carbon dioxide. Venus is the hottest planet. Even though Mercury is closer to the sun, Venus has an atmosphere that holds on to the heat from the sun making it the most hot.", "Venus's surface is covered in active volcanoes.", "Venus is the only planet that rotates counterclockwise around its own axis. This means that sunset and sunrise would be opposite of what we see on Earth. The sun would rise in the west and set in the east. It also rotates very slowly making a day on Venus longer than a year on Venus."]
     })
 
     const Earth = await createPlanet({
@@ -100,9 +94,7 @@ async function createInitialPlanets() {
       sun_distance: "150 million km",
       type: "rocky",
       moon_num: 1,
-      fact_one: "Earth resides within the “habitable zone” of the Sun. This is the perfect distance from the Sun in which the temperatures are just right for liquid water to exist on the surface.",
-      fact_two: "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life.",
-      fact_three: "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life."
+      facts: ["Earth resides within the “habitable zone” of the Sun. This is the perfect distance from the Sun in which the temperatures are just right for liquid water to exist on the surface.", "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life.", "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life."]
     })
 
     const Mars = await createPlanet({
@@ -114,9 +106,7 @@ async function createInitialPlanets() {
       sun_distance: "228 million km",
       type: "rocky",
       moon_num: 2,
-      fact_one: "Mars is colloquially known as the Red Planet due to its red appearance. It gets its red color from the oxidation of iron in its soil. ",
-      fact_two: "Mars has the largest volcano in our solar system called Olympus Mons. ",
-      fact_three: "Mars used to have liquid water. This is evidenced by the existence of ancient river valleys and floodplains, deltas, lakebeds, and sedimentary rock and mineral deposits. Today, all of Mars's water is frozen at its polar ice caps. "
+      facts: ["Mars is colloquially known as the Red Planet due to its red appearance. It gets its red color from the oxidation of iron in its soil. ", "Mars has the largest volcano in our solar system called Olympus Mons. ", "Mars used to have liquid water. This is evidenced by the existence of ancient river valleys and floodplains, deltas, lakebeds, and sedimentary rock and mineral deposits. Today, all of Mars's water is frozen at its polar ice caps. "]
     })
 
     const Jupiter = await createPlanet({
@@ -128,9 +118,7 @@ async function createInitialPlanets() {
       sun_distance: "740 million km",
       type: "gas",
       moon_num: 80,
-      fact_one: "Jupiter is the fastest rotating planet; the surface is moving at about 30 times the speed of Earth's surface. Due to its fast rotation, it has the shortest day of all the planets.",
-      fact_two: "Jupiter's surface is marked by the Great Red Spot, a giant storm that has been blowing for over 300 years. The bands of different colors around Jupiter are clouds separated by jet streams, often spawning large cyclonic and anticyclonic storms that can last long periods of time.",
-      fact_three: "Jupiter has rings, like the other Jovian planets, held in by its massive gravitational pull. Jupiter's rings are very faint and hard to observe."
+      facts: ["Jupiter is the fastest rotating planet; the surface is moving at about 30 times the speed of Earth's surface. Due to its fast rotation, it has the shortest day of all the planets.", "Jupiter's surface is marked by the Great Red Spot, a giant storm that has been blowing for over 300 years. The bands of different colors around Jupiter are clouds separated by jet streams, often spawning large cyclonic and anticyclonic storms that can last long periods of time.", "Jupiter has rings, like the other Jovian planets, held in by its massive gravitational pull. Jupiter's rings are very faint and hard to observe."]
     })
 
 
@@ -240,6 +228,55 @@ async function createInitialMoons(){
       history: "Callisto is named for a woman turned into a bear by Zeus in Greek mythology. Zeus is identical to the Roman god Jupiter.",
       moon_radius:2410.3
     })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Carme",
+      discovered:"Carme was discovered on July 30, 1938 by Seth Barnes Nicholson with the 100-inch (2.5 m) Hooker telescope at the Mount Wilson Observatory in California.",
+      history: "Carme is named for the mother of Britomartis by the Roman god Jupiter (or Zeus in the Greek version of the myth), who became a goddess of Crete.",
+      moon_radius:23
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Carpo",
+      discovered:"Carpo was discovered on Feb. 26, 2003 by Scott S. Sheppard and others from the University of Hawaii's Institute for Astronomy using the 12-ft. (3.6-m) Canada-France-Hawaii telescope at the Mauna Kea Observatory in Hawaii.",
+      history: "Originally designated S/2003 J20, Carpo was named for one of the three Athenian goddesses of the flowers of spring and the fruits of summer and autumn. An annual festival in their honor was called the Horaea. According to Hesoid, a group of goddesses collectively called the Horae (with different names, which did not include Carpo) were daughters of Zeus, the Greek equivalent of the Roman god Jupiter.​",
+      moon_radius:1.5
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Chaldene",
+      discovered:"Chaldene was discovered Nov. 23, 2000 by Scott S. Sheppard, David C. Jewitt, Yange R. Fernandez, and Eugene Magnier at an observatory on Mauna Kea in Hawaii.",
+      history: "Originally called S/2000 J10, Chaldene was named for the mother of Solymos by Zeus, the Greek equivalent of the Roman god Jupiter.​",
+      moon_radius:1.9
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Cyllene",
+      discovered:"Cyllene was discovered Feb. 9, 2003 by Scott S. Sheppard and his team from the University of Hawaii at the Mauna Kea Observatory in Hawaii.",
+      history: "Originally called S/2003 J13, Cyllene was named for a nymph in Greek mythology who was a daughter of Zeus, the Greek equivalent of the Roman god Jupiter. She is associated with a mountain in Arcadia on which, legend has it, the blackbirds become white and are impossible to shoot during the daytime.​",
+      moon_radius:1
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Dia",
+      discovered:"Dia was discovered in 2000 by S.S. Sheppard, D.C. Jewitt, Y. Fernandez, and G. Magnier using the University of Hawaii's 2.2 m (88 inch) telescope atop Mauna Kea. The moon was then lost in Jupiter's bright glare for several years. Dia was rediscovered in images obtained by the Magellan Telescope in 2010 and 2011.",
+      history: "Dia is a Greek name meaning 'she who belongs to Zeus'(who became Jupiter in Roman mythology). Dia was the divine daughter of the seashore. The tiny moon was originally called S/2000 J11 because it is a satellite that was discovered in 2000, and was the 11th satellite of Jupiter to be found that year.​​",
+      moon_radius:2
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Eirene",
+      discovered:"Eirene was discovered in February 2003 by Scott Sander Sheppard at the Mauna Kea Observatory in Hawaii, and originally designated S/2003 J5.",
+      history: "In mythology, Eirene is the goddess of peace and the daughter of Zeus and Themis.​",
+      moon_radius:2
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Elara",
+      discovered:"Elara was discovered on Jan. 5, 1905 by Charles Dillon Perrine in photographs taken with the Crossley 36-inch (0.9 meter) reflector of the Lick Observatory on Mount Hamilton at the University of California, San Jose..",
+      history: "Elara is named for one of the lovers of Zeus, the Greek equivalent of the Roman god Jupiter. In Greek mythology, Zeus hid her from his wife, Hera, by placing Elara deep beneath the Earth, where she gave birth to their son, a giant called Tityas​",
+      moon_radius:43
+    })
 
     //end of Jupiter's moons
 
@@ -279,6 +316,18 @@ async function testDB(){
   console.log("get moon by name")
   const moonName= await getMoonByName("Moon")
   console.log(moonName, "should be our moon")
+
+  console.log("getting small moons")
+  const smallMoons= await getMoonsSmallerThan(2)
+  console.log(smallMoons, "moons smaller then 2km")
+
+  console.log("getting large moons")
+  const largeMoons= await getMoonsBiggerThan(1000)
+  console.log(largeMoons, "moons bigger then 1000km")
+
+  console.log("Counting moons on planets")
+  const moonCount= await countMoonsByPlanetId(5)
+  console.log(moonCount, "are how many moons Jupiter has")
 }
 
 buildingDB()
