@@ -46,8 +46,6 @@ async function createPlanet({
       ]
     );
 
-    console.log("planet created");
-
     return planet;
   } catch (error) {
     throw error;
