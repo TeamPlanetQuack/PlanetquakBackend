@@ -1,7 +1,7 @@
 const { client } = require("./client");
 const bcrypt = require("bcrypt");
 const {createPlanet} = require("./index");
-const { createMoon } = require("./moons");
+const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName } = require("./moons");
 
 
 
@@ -12,6 +12,7 @@ async function dropTables() {
     DROP TABLE IF EXISTS moons;
     DROP TABLE IF EXISTS planets;
     DROP TYPE IF EXISTS planet_name;
+    DROP TYPE IF EXISTS planet_type;
     `);
     console.log("Finished dropping tables");
   } catch (error) {
@@ -25,16 +26,17 @@ async function createTables(){
     console.log("Starting to build tables...");
     await client.query(`
     CREATE TYPE planet_name AS ENUM ('Mercury', 'Mars', 'Earth', 'Venus', 'Jupiter', 'Saturn', 'Uranus', 'Neptune');
+    CREATE TYPE planet_type AS ENUM ('gas', 'rocky');
 
     CREATE TABLE planets(
       id SERIAL PRIMARY KEY,
-      planet_name VARCHAR(255),
+      name planet_name,
       name_origin VARCHAR(255),
-      radius DECIMAL(10,4),
+      radius DECIMAL(10,2),
       orbit VARCHAR(255),
       rotation VARCHAR(255),
       sun_distance VARCHAR(255),
-      planet_type_gas BOOLEAN DEFAULT false,
+      type planet_type,
       moon_num INT NOT NULL DEFAULT(0),
       fact_one TEXT,
       fact_two TEXT,
@@ -61,13 +63,13 @@ async function createInitialPlanets() {
     console.log("Starting to create planets...");
 
     const Mercury = await createPlanet({
-      planet_name: "Mercury",
+      name: "Mercury",
       name_origin: "Mercury is named after the Roman God of swift travel, as it is the fastest moving planet in the night sky.",
       radius: 2440.00,
       orbit: "88 Earth Days",
       rotation: "59 Hours",
       sun_distance: "58 million km",
-      planet_type_gas: false,
+      type: "rocky",
       moon_num: 0,
       fact_one: "Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.",
       fact_two: "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.",
@@ -75,13 +77,13 @@ async function createInitialPlanets() {
     })
 
     const Venus = await createPlanet({
-      planet_name: "Venus",
+      name: "Venus",
       name_origin: "Venus is named after the Roman God of love and beauty due to it being the brightest object in the sky aside from the Sun and the Moon.",
       radius: 6050.00,
       orbit: "225 Earth Days",
       rotation: "243 Earth Days",
       sun_distance: "108 million km",
-      planet_type_gas: false,
+      type: "rocky",
       moon_num: 0,
       fact_one: "Venus has an atmosphere thick with greenhouse gases, such as carbon dioxide. Venus is the hottest planet. Even though Mercury is closer to the sun, Venus has an atmosphere that holds on to the heat from the sun making it the most hot.",
       fact_two: "Venuss surface is covered in active volcanoes.",
@@ -89,13 +91,13 @@ async function createInitialPlanets() {
     })
 
     const Earth = await createPlanet({
-      planet_name: "Earth",
+      name: "Earth",
       name_origin: "Earth is a Germanic word meaning “the ground”. It is the only planet that is not named after a Greek or Roman God.",
       radius: 6371,
       orbit: "365 Earth Days",
       rotation: "24 Hours",
       sun_distance: "150 million km",
-      planet_type_gas: false,
+      type: "rocky",
       moon_num: 1,
       fact_one: "Earth resides within the “habitable zone” of the Sun. This is the perfect distance from the Sun in which the temperatures are just right for liquid water to exist on the surface.",
       fact_two: "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life.",
@@ -103,13 +105,13 @@ async function createInitialPlanets() {
     })
 
     const Mars = await createPlanet({
-      planet_name: "Mars",
+      name: "Mars",
       name_origin: "Mars is named after the Roman God of war.",
       radius: 3390.00,
       orbit: "687 Earth Days",
       rotation: "24.6 Hours",
       sun_distance: "228 million km",
-      planet_type_gas: false,
+      type: "rocky",
       moon_num: 2,
       fact_one: "Mars is colloquially known as the Red Planet due to its red appearance. It gets its red color from the oxidation of iron in its soil. ",
       fact_two: "Mars has the largest volcano in our solar system called Olympus Mons. ",
@@ -175,7 +177,23 @@ async function buildingDB() {
   }
 }
 async function testDB(){
-  console.log("coming soon")
+  console.log("Starting to test database");
+
+  console.log("getting moon by id");
+  const moonId= await getMoonById(2)
+  console.log(moonId, "this is moon 2")
+
+  console.log("all the moons");
+  const allMoons= await getAllMoons()
+  console.log(allMoons, "All the moons")
+
+  console.log("Get moons by planet id")
+  const planetMoon= await getMoonsByPlanetId(4)
+  console.log(planetMoon, "moons for mars")
+
+  console.log("get moon by name")
+  const moonName= await getMoonByName("Moon")
+  console.log(moonName, "should be our moon")
 }
 
 buildingDB()

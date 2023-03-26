@@ -11,13 +11,13 @@ async function getAllPlanets() {
 }
 
 async function createPlanet({
-  planet_name,
+  name,
   name_origin,
   radius,
   orbit,
   rotation,
   sun_distance,
-  planet_type_gas,
+  type,
   moon_num,
   fact_one,
   fact_two,
@@ -27,18 +27,18 @@ async function createPlanet({
     const {
       rows: [planet],
     } = await client.query(
-      `INSERT into planets(planet_name, name_origin, radius, orbit, rotation, sun_distance, planet_type_gas, moon_num, fact_one, fact_two, fact_three)
+      `INSERT into planets(name, name_origin, radius, orbit, rotation, sun_distance, type, moon_num, fact_one, fact_two, fact_three)
         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)
         RETURNING *;
         `,
       [
-        planet_name,
+        name,
         name_origin,
         radius,
         orbit,
         rotation,
         sun_distance,
-        planet_type_gas,
+        type,
         moon_num,
         fact_one,
         fact_two,
