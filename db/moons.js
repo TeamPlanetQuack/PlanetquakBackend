@@ -3,15 +3,16 @@ const { client } = require("./client");
 async function createMoon({
   planet_id,
   moon_name,
+  discovered,
   history,
   moon_radius}){
     try {
       const {rows:[moons]}= await client.query(
         `
-        INSERT INTO moons (planet_id, moon_name, history, moon_radius)
-        VALUES ($1, $2, $3, $4)
+        INSERT INTO moons (planet_id, moon_name, discovered, history, moon_radius)
+        VALUES ($1, $2, $3, $4, $5)
         RETURNING *;`
-      , [planet_id, moon_name, history, moon_radius]);
+      , [planet_id, moon_name, discovered, history, moon_radius]);
       return moons
     } catch (error) {
       throw error;
