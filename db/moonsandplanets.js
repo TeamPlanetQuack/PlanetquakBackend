@@ -289,6 +289,41 @@ const moonData = [
   history: "In mythology, Ganymede ('GAN uh meed') was a beautiful young boy who was carried to Olympus by Zeus (the Greek equivalent of the Roman god Jupiter) disguised as an eagle. Ganymede became the cupbearer of the Olympian gods.​",
   moon_radius:2631.2
 },
+{
+  planet_id:5,
+  moon_name:"Harpalyke",
+  discovered:"Harpalyke was discovered Nov. 23, 2000 by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J5, Harpalyke was named for a woman in Greek mythology who was transformed into a night bird called Chalcis. According to one version of the story, this transformation happened after she had intercourse with Zeus, the Greek equivalent of the Roman god Jupiter. In another version, she had incestuous relations with her father. In revenge, she killed her younger brother or her son (depending on the account), carved him up, cooked the meat and served it to her father, who ultimately kills himself.​",
+  moon_radius:2.2
+},
+{
+  planet_id:5,
+  moon_name:"Hegemone",
+  discovered:"Hegemone was discovered on Feb. 8, 2003 by Scott S. Sheppard, David C. Jewitt, Jan T. Kleyna, Yanga R. Fernandez, and Henry H. Hsieh at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2003 J8, Hegemone was named for one of the Graces (according to the Athenians), who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. The name means 'female leader.'​",
+  moon_radius:1.5
+},
+{
+  planet_id:5,
+  moon_name:"Helike",
+  discovered:"Helike was discovered on Feb. 6, 2003 by Scott S. Sheppard at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2003 J6, Helike was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Helike is also the name of a nymph in Greek mythology who helped to nurse Zeus and was transferred to the stars as a reward. There, she became the constellation, the Great Bear.​",
+  moon_radius:2
+},
+{
+  planet_id:5,
+  moon_name:"Hermippe",
+  discovered:"Hermippe was discovered in Dec. 9, 2001 by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2001 J3, Hermippe was named for one of the many lovers of Zeus, the Greek equivalent of the Roman god Jupiter. She bore him a son named Orchomenos.​",
+  moon_radius:2
+},
+{
+  planet_id:5,
+  moon_name:"Herse",
+  discovered:"Herse was discovered on Feb. 27, 2003 by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, and Lynne Allen.",
+  history: "Originally called S/2003 J17, Herse was named for a daughter of Selene (goddess of the moon) and Zeus, the Greek equivalent of the Roman god Jupiter.​",
+  moon_radius:1
+},
 ]
 
 module.exports = {
