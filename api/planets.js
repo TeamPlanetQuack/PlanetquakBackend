@@ -22,32 +22,39 @@ planetRouter.get("/", async (req, res, next) => {
   }
 });
 
-planetRouter.get("/:planet_id", async (req, res, next) =>  {
-  const {planet_id} = req.params
+planetRouter.get("/:id", async (req, res, next) =>  {
+  const {id} = req.params
 
   try {
-    const planets = await getPlanetById(planet_id); 
+    const planetId = await getPlanetById(id); 
 
-    res.send({planets}
+    res.send({planetId}
       
     );
   } catch ({ name, message }) {
-    next({ name, message });
+    next({
+      name:"NoPlanetId",
+      message: `Couldn't find planet by ${id}`,
+      error:"no planetId"
+    })
   }
 
 })
 
-planetRouter.get("/:planetName", async (req, res, next) =>  {
-  const {planetName} = req.params
-
+planetRouter.get("/name/:name", async (req, res, next) =>  {
+  const {name} = req.params
   try {
-    const planets = await getPlanetByName(planetName); 
+    const planetName = await getPlanetByName(name); 
 
-    res.send({planets}
+    res.send({planetName}
       
     );
   } catch ({ name, message }) {
-    next({ name, message });
+    next({
+      name:"NoPlanetName",
+      message: `Couldn't find planet by ${name}`,
+      error:"no planet name"
+    });
   }
 
 })

@@ -1,6 +1,6 @@
 const { client } = require("./client");
 const bcrypt = require("bcrypt");
-const {getAllPlanets, createPlanet} = require("./index");
+const {getAllPlanets, createPlanet, getPlanetByName} = require("./index");
 const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName, getMoonsSmallerThan, getMoonsBiggerThan, countMoonsByPlanetId } = require("./moons");
 const { planetData, moonData } = require("./moonsandplanets");
 
@@ -100,6 +100,10 @@ async function testDB(){
   console.log("all planets");
   const allPlanets= await getAllPlanets()
   console.log(allPlanets, "All the planets")
+
+  console.log("planet name");
+  const planetName= await getPlanetByName("Mercury")
+  console.log(planetName, "Planet name")
 
   console.log("getting moon by id");
   const moonId= await getMoonById(2)

@@ -69,7 +69,7 @@ async function getPlanetById(planet_id) {
 }
 
 async function getPlanetByName(planetName) {
-  const { rows: planet } = await client.query(
+const { rows: [planet] } = await client.query(
     `
       SELECT *
       FROM planets
@@ -80,7 +80,7 @@ async function getPlanetByName(planetName) {
   if (!planet) {
     console.log("No planet name found");
   } else {
-    return moon;
+    return planet;
   }
 }
 
