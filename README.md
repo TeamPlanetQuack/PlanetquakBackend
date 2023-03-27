@@ -8,9 +8,9 @@ PlanetQuack is an education single-page application showcasing a profile about e
 
 <b>To start the project locally: </b>
 
-<b>Seed your database with: npm run seed</b>
-<b>Start you api with: npm run start:dev</b>
-<b>If you'd like local host the api it is http://localhost:8080/api </b>
+<b>Seed your database with: npm run seed
+   Start you api with: npm run start:dev
+   If you'd like local host the api it is http://localhost:8080/api </b>
 
 <b>Screenshots: </b>
 
