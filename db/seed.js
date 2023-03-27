@@ -320,14 +320,21 @@ async function createInitialMoons(){
       moon_name:"Erinome",
       discovered:"Erinome was discovered on Nov. 23, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
       history: "Originally called S/2000 J4, Erinome was named for a chaste young woman in Roman mythology whom Venus causes to fall in love with Jupiter. She loses her virginity to Adonis, however, after Venus throws a fog on her. This displeases the goddess Diana, who turns Erinome into a peacock. Adonis, realizing he has assaulted a love of Jupiter, flees into the woods, but is driven out by Mercury. Just as Adonis is about to defeat Mercury in a violent fight, Jupiter throws a lightning bolt and kills him. A name ending in 'e' was chosen for this moon in accordance with the International Astronomical Union's policy for designating outer moons with retrograde orbits.​",
-      moon_radius:1
+      moon_radius:1.6
     })
     await createMoon({
       planet_id:5,
       moon_name:"Ersa",
-      discovered:"Erinome was discovered on Nov. 23, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
-      history: "Originally called S/2000 J4, Erinome was named for a chaste young woman in Roman mythology whom Venus causes to fall in love with Jupiter. She loses her virginity to Adonis, however, after Venus throws a fog on her. This displeases the goddess Diana, who turns Erinome into a peacock. Adonis, realizing he has assaulted a love of Jupiter, flees into the woods, but is driven out by Mercury. Just as Adonis is about to defeat Mercury in a violent fight, Jupiter throws a lightning bolt and kills him. A name ending in 'e' was chosen for this moon in accordance with the International Astronomical Union's policy for designating outer moons with retrograde orbits.​",
-      moon_radius:1
+      discovered:"This tiny moon of Jupiter was first spotted in 2017 and originally designated S/2018 J1. The discovery announcement was made in July 2018.",
+      history: "In mythology, Ersa is the sister of Pandia and, as such, also the daughter of Zeus and the Moon goddess Selene. Ersa is the goddess of dew.",
+      moon_radius:1.5
+    })
+    await createMoon({
+      planet_id:5,
+      moon_name:"Euanthe",
+      discovered:"Euanthe was discovered on Dec. 11, 2001 by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+      history: "Originally called S/2001 J7, Euanthe was given one of the names in Greek mythology for the mother of the Graces by Zeus, the Greek equivalent of the Roman god Jupiter.",
+      moon_radius:1.5
     })
 
     //end of Jupiter's moons
