@@ -1,6 +1,6 @@
 const { client } = require("./client");
 const bcrypt = require("bcrypt");
-const {createPlanet} = require("./index");
+const {getAllPlanets, createPlanet} = require("./index");
 const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName, getMoonsSmallerThan, getMoonsBiggerThan, countMoonsByPlanetId } = require("./moons");
 
 
@@ -121,12 +121,50 @@ async function createInitialPlanets() {
       facts: ["Jupiter is the fastest rotating planet; the surface is moving at about 30 times the speed of Earth's surface. Due to its fast rotation, it has the shortest day of all the planets.", "Jupiter's surface is marked by the Great Red Spot, a giant storm that has been blowing for over 300 years. The bands of different colors around Jupiter are clouds separated by jet streams, often spawning large cyclonic and anticyclonic storms that can last long periods of time.", "Jupiter has rings, like the other Jovian planets, held in by its massive gravitational pull. Jupiter's rings are very faint and hard to observe."]
     })
 
+    const Saturn = await createPlanet({
+      name: "Saturn",
+      name_origin: "Saturn is named after the Roman God of agriculture and wealth.",
+      radius: 58232,
+      orbit: "10,585 Earth Days",
+      rotation: "10.7 Hours",
+      sun_distance: "1,468 million km",
+      type: "gas",
+      moon_num: 83,
+      facts: ["Saturn is most well known for its rings. All of the Jovian (Gas Giant) planets have rings, but Saturn's are the most stunning. The rings are made up of chunks of rock and ice of various sizes, thought to have come from pieces of comets, asteroids, or broken up moons, all held in by Saturn's gravitational pull. ", "Saturn has the lowest density of all of the planets in our solar system. Its average density is lower than the density of water, so it would float if there were an ocean big enough to contain it.", "Two of Saturn's moons, Enceladus and Titan, are being studied for their potential to sustain life. Enceladus is a frozen ocean moon, but there is liquid beneath the frozen surface. Samples of this liquid water have found many of the chemical ingredients needed for life. Titan is the only place in the solar system (besides Earth) that has liquid water in the form of rivers, lakes, and seas on its surface."]
+    })
+
+    const Uranus = await createPlanet({
+      name: "Uranus",
+      name_origin: "Uranus is named after the Greek God of the sky. ",
+      radius: 25362,
+      orbit: "30,660 Earth Days",
+      rotation: "17 Hours and 14 Minutes",
+      sun_distance: "3,050 million km",
+      type: "gas",
+      moon_num: 27,
+      facts: ["Uranus spins around its axis at a 90-degree angle from its orbital plane. This makes it appear to spin on its side. It is thought that an impact with another planet or moon may have knocked it into this unique rotation.", "Uranus gets its blue color from methane gas in the atmosphere.", "Because of Uranus's unique spin, day and night are not necessarily light and dark. Seasons more closely mimic the light vs dark of day and night. The side of Uranus not facing the sun is experiencing winter in darkness for 21 Earth years. On the side facing the sun, it is summer and it is light during both the 'day' and the 'night'. During the spring and fall equinoxes, the planet is experiencing normal day-night cycles."]
+    })
+
+    const Neptune = await createPlanet({
+      name: "Neptune",
+      name_origin: "Neptune is named after the Roman God of the sea.",
+      radius: 24622,
+      orbit: "60,225 Earth Days",
+      rotation: "16 Hours",
+      sun_distance: "4,474 million km",
+      type: "gas",
+      moon_num: 27,
+      facts: ["Neptune was actually predicted mathematically before it was seen and discovered. ", "Neptune is the windiest planet in our solar system. The wind on Neptune is 3 times stronger than the wind on Jupiter which rotates fastest in our solar system and sustains century long storms, and 9 times stronger than the wind on Earth. We don't really know why Neptune's winds are so strong.", "The dwarf planet Pluto (previously considered a planet before it was reclassified) is sometimes closer to Earth than Neptune is. In the past, our 8th planet Neptune was technically sometimes our 9th planet."]
+    })
 
     console.log(Mercury);
     console.log(Venus);
     console.log(Earth);
     console.log(Mars);
     console.log(Jupiter);
+    console.log(Saturn);
+    console.log(Uranus);
+    console.log(Neptune);
 
 
     console.log("Finished creating planets!");
@@ -300,6 +338,10 @@ async function buildingDB() {
 }
 async function testDB(){
   console.log("Starting to test database");
+
+  console.log("all planets");
+  const allPlanets= await getAllPlanets()
+  console.log(allPlanets, "All the planets")
 
   console.log("getting moon by id");
   const moonId= await getMoonById(2)
