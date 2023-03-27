@@ -58,9 +58,9 @@ async function getPlanetById(planet_id) {
   } = await client.query(`
     SELECT *
     FROM planets
-    WHERE id=$1;
-    `);
-  [planet_id];
+    WHERE id=$1
+    `, [planet_id]);
+  ;
   if (!planet) {
     console.log("No planet id found");
   } else {
