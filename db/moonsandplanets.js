@@ -320,9 +320,44 @@ const moonData = [
 {
   planet_id:5,
   moon_name:"Herse",
-  discovered:"Herse was discovered on Feb. 27, 2003 by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, and Lynne Allen.",
-  history: "Originally called S/2003 J17, Herse was named for a daughter of Selene (goddess of the moon) and Zeus, the Greek equivalent of the Roman god Jupiter.​",
-  moon_radius:1
+  discovered:"Himalia was discovered on 3 December 1904 by Charles Dillon Perrine in photographs taken with the Crossley 36-inch (0.9 meter) reflector of the Lick Observatory on Mount Hamilton at the University of California, San Jose.",
+  history: "Himalia was named for a nymph of the island of Rhodes in Greek mythology who was one of the lovers of Zeus (the Greek equivalent of the Roman god Jupiter). She bore him three sons: Spartaeus, Cronios and Cytus. ​",
+  moon_radius:85
+},
+{
+  planet_id:5,
+  moon_name:"Io",
+  discovered:"Io was discovered on Jan. 8, 1610 by Galileo Galilei. The discovery, along with three other Jovian moons, was the first time a moon was discovered orbiting a planet other than Earth.",
+  history: "In mythology, Io is a mortal woman transformed into a cow during a marital dispute between the Greek god Zeus—Jupiter in Roman mythology—and his wife, Juno.​",
+  moon_radius:1821.6
+},
+{
+  planet_id:5,
+  moon_name:"Iocaste",
+  discovered:"Iocaste was discovered Nov. 23, 2000 by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J3, Iocaste was named for the mother of Agamedes by the Roman god, Jupiter.​",
+  moon_radius:2.6
+},
+{
+  planet_id:5,
+  moon_name:"Isonoe",
+  discovered:"Isonoe was discovered Nov. 23, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J6, Isonoe was named for the mother of Orchomenus by Zeus, the Greek equivalent of the Roman god Jupiter. Isonoe was one of the 50 daughters of Danaus in Greek legend. ​",
+  moon_radius:1.9
+},
+{
+  planet_id:5,
+  moon_name:"Isonoe",
+  discovered:"Isonoe was discovered Nov. 23, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J6, Isonoe was named for the mother of Orchomenus by Zeus, the Greek equivalent of the Roman god Jupiter. Isonoe was one of the 50 daughters of Danaus in Greek legend. ​",
+  moon_radius:1.9
+},
+{
+  planet_id:5,
+  moon_name:"S/2010 J2 Jupiter LII",
+  discovered:"This unnamed moon was discovered Sept. 8, 2010, at the Mauna Kea Observatories by Christian Veillet.",
+  history: "Unnamed moon​",
+  moon_radius:2
 },
 ]
 
