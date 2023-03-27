@@ -1,13 +1,13 @@
 const express = require("express");
 
-const {createPlanet, getAllPlanets} = require("../db/planets");
+const {getAllPlanets} = require("../db/planets");
 const planetRouter = express.Router();
 
 planetRouter.use("/", (req, res, next) => {
     next();
 })
 
-planetRouter.get("/", async (req, res) => {
+planetRouter.get("/", async (req, res, next) => {
   try {
   const planets = await getAllPlanets();
   

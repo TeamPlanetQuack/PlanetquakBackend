@@ -1,5 +1,5 @@
 module.exports = {
-    // ...require("./moon"),
+    ...require("./moons"),
     ...require("./planets")
   };
   
