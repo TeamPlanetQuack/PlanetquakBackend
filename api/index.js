@@ -1,8 +1,11 @@
 const express = require("express");
 const apiRouter = express.Router();
 
-const planetRouter = require("./planet");
-apiRouter.use("/planet", planetRouter);
+const planetRouter = require("./planets");
+apiRouter.use("/planets", planetRouter);
+
+const moonRouter = require("./moons");
+apiRouter.use("/moons", moonRouter);
 
 apiRouter.get("*", (req, res, next) => {
   res.status(404);
