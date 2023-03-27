@@ -1,13 +1,17 @@
 const { client } = require("./client");
 
 async function getAllPlanets() {
-  const { rows } = await client.query(
-    `SELECT id, planet_name
+  try {
+    const { rows } = await client.query(
+      `SELECT *
             FROM planets;
           `
-  );
+    );
 
-  return rows;
+    return rows;
+  } catch (error) {
+    throw error;
+  }
 }
 
 async function createPlanet({
@@ -48,7 +52,41 @@ async function createPlanet({
   }
 }
 
+async function getPlanetById(planet_id) {
+  const {
+    rows: [planet],
+  } = await client.query(`
+    SELECT *
+    FROM planets
+    WHERE id=$1;
+    `);
+  [planet_id];
+  if (!planet) {
+    console.log("No planet id found");
+  } else {
+    return planet;
+  }
+}
+
+async function getPlanetByName(planetName) {
+  const { rows: planet } = await client.query(
+    `
+      SELECT *
+      FROM planets
+      WHERE name=$1
+      `,
+    [planetName]
+  );
+  if (!planet) {
+    console.log("No planet name found");
+  } else {
+    return moon;
+  }
+}
+
 module.exports = {
   getAllPlanets,
   createPlanet,
+  getPlanetById,
+  getPlanetByName
 };
