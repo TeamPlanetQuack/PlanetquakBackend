@@ -2,13 +2,15 @@
 
 <b>Description: </b>
 
-PlanetQuack is an education single-page application showcasing a profile about each of the planets in our solar system. This repository is the back-end repository for our website. In this readme you can find links to the deployment, instructions for viewing the site locally on your computer, screenshots, teammembers, the tech stack used, and the requirements for the Quackathon challenge it was submitted for with descriptions of how we met and/or exceeded those goals. 
+PlanetQuack is an education single-page application showcasing a profile about each of the planets in our solar system. This repository is the back-end repository for our website. In this readme you can find links to the deployment, instructions for viewing the site locally on your computer, screenshots, teammembers, the tech stack used, and the requirements for the Quackathon challenge it was submitted for with descriptions of how we met and/or exceeded those goals.
 
 <b>Deployment: </b>
 
 <b>To start the project locally: </b>
 
-{{{ Insert instructions for starting backend locally here }}}
+<b>Seed your database with: npm run seed</b>
+<b>Start you api with: npm run start:dev</b>
+<b>If you'd like local host the api it is http://localhost:8080/api </b>
 
 <b>Screenshots: </b>
 
@@ -21,7 +23,7 @@ PlanetQuack is an education single-page application showcasing a profile about e
 
 <b>Tech Stack: </b>
 
-For the back-end we are using Express.js, Node.js, and postgreSQL. 
+For the back-end we are using Express.js, Node.js, and postgreSQL.
 
 <b>Quackathon requirments: </b>
 
@@ -30,13 +32,13 @@ For the back-end we are using Express.js, Node.js, and postgreSQL.
 - How we exceeded this goal:
 
 -- You must use foreign keys.
-- How we met this goal:
+- How we met this goal: The moon table references the planet table with planet_id
 - How we exceeded this goal:
 
 -- Planets and Moons must be stored separate from one another.
 - How we met this goal:
 - How we exceeded this goal:
-    
+
 -- You must incorporate one ENUM for the planet data.
-- How we met this goal:
-- How we exceeded this goal:
+- How we met this goal: The planet name's are in an Enum
+- How we exceeded this goal: We also have the planet type as an Enum
