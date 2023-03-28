@@ -538,6 +538,48 @@ const temp=[
   history: "Originally called S/2000 S4, Tarvos was named for a bull in Celtic mythology. It is known from two stone sculptures, found in Paris and Trier, of a bull with three cranes and a tree which is presumed to be a willow. The narrative behind this imagery is lost to antiquity, but it has been hypothesized that the tree represents the cycle of life, the birds are spirits released when life has ended, and the bull represents the vigor and sexual potency that keeps the cycle spinning​",
   moon_radius:7.5
 },
+{
+  planet_id:6,
+  moon_name:"Telesto",
+  discovered:"Telesto was discovered in 1980 using ground-based observations by Brad Smith, Harold Reitsema, Stephen Larson, and John Fountain.",
+  history: "Telesto is a daughter of the Titans Oceanus and Tethys in Greek mythology. It was originally designated S/1981 S13.​",
+  moon_radius:12.4
+},
+{
+  planet_id:6,
+  moon_name:"Tethys",
+  discovered:"Giovanni Cassini discovered Tethys on March 21, 1684.",
+  history: "The name comes from the Greek goddess (or Titan) Tethys, who was the daughter of Uranus and Gaea, a sister to Kronus and the wife of Oceanus. She was said to be the mother of the chief rivers, the mother of three thousand daughters called the Oceanids and the embodiment of the waters of the world.​",
+  moon_radius:533
+},
+{
+  planet_id:6,
+  moon_name:"Thiazzi",
+  discovered:"This moon was discovered on Dec. 12, 2004, by Scott S. Sheppard, David C. Jewitt, and Jan iT. Kleyna at the Mauna Kea Observatories.",
+  history: "Its provisional designation was S/2004 S33. It’s also known as Saturn LXIII (63). According to the International Astronomical Union (IAU) – in mythology, Thiazzi is a Norse giant, and a son of Alvaldi who kidnapped Idun, guardian of the apples of the gods.​",
+  moon_radius:4
+},
+{
+  planet_id:6,
+  moon_name:"Thrymr",
+  discovered:"Thrymr was discovered in 2000 by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, Hans Scholl, Matthew J. Holman, Brian G. Marsden, Phillip D. Nicholson, and Joseph A. Burns using the 3.6-m Canada-France-Hawaii reflector on Mauna Kea in Hawaii, with adaptive optics.",
+  history: "Originally called S/2000 S7, Thrymr was named for a giant in Norse mythology who stole Thor's hammer and offered to return it only if the gods gave him the very beautiful goddess Freyia to be his wife. The gods agree, but instead send Thor, disguised as Freyia. Thor as Freyia orders the hammer to be placed on 'her' knee, whereupon Thor uses the hammer to kill Thrymr, along with the giant's sister, who had asked for 'Freyia's' rings.​",
+  moon_radius:3.5
+},
+{
+  planet_id:6,
+  moon_name:"Titan",
+  discovered:"Dutch astronomer Christiaan Huygens discovered Saturn's largest moon, Titan, on March 25, 1655. It was nearly 300 years later, in 1944, when Dutch-American astronomer Gerard Kuiper discovered one of the characteristics that makes Titan exceptional: this distant moon actually has an atmosphere.",
+  history: "Titan, the largest moon of Saturn, is named for the Titans of Greek mythology.​",
+  moon_radius:2574.7
+},
+{
+  planet_id:6,
+  moon_name:"Ymir",
+  discovered:"Ymir was discovered in 2000 by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, Hans Scholl, Matthew J. Holman, Brian G. Marsden, Phillip D. Nicholson, and Joseph A. Burns at the European Southern Observatory in La Silla, Chile. They discovered Paaliaq and Kiviuq of the Inuit group at the same time.",
+  history: "Originally called S/2000 S1, Ymir was named for the first living being in Norse mythology, the first of a race of frost giants. Odin and his brothers killed Ymir and used his body parts to fashion the Earth. His skull became the heavens.​",
+  moon_radius:9
+},
 
 
 ]
