@@ -274,10 +274,45 @@ const temp=[
 },
 {
   planet_id:6,
-  moon_name:"Mimas",
-  discovered:"Mimas was discovered on Sept. 17, 1789 by English astronomer William Herschel, using his 40-foot reflector telescope.",
-  history: "The mythological Mimas was a giant who was killed by Mars in the war between the Titans and the gods of Olympus. Even after his death, Mimas' legs – which were serpents – hissed vengeance and sought to attack his killer.",
-  moon_radius:198.2
+  moon_name:"Mundilfari",
+  discovered:"Mundilfari was discovered in 2000 by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, Hans Scholl, Matthew J. Holman, Brian G. Marsden, Phillip D. Nicholson, and Joseph A. Burns using the 3.6-m Canada-France-Hawaii reflector on Mauna Kea in Hawaii, with adaptive optics. They discovered seven other Saturnian moons at the same time: Tarvos, Ijiraq, Thrymr, Skathi, Siarnaq, Erriapus, and Suttungr.",
+  history: "Originally called S/2000 S9, Mundilfari was named for the father of two beautiful children in Norse mythology, a son whom he named 'Moon' and a daughter whom he named 'Sun.'1 The gods were angered at what they considered his arrogance, so they placed the children in the sky and made the daughter drive the chariot of the sun and the son drive the chariot of the Moon. Each is chased by a wolf who is destined to catch and devour them at the doomsday time known as Ragnarok",
+  moon_radius:3.5
+},
+{
+  planet_id:6,
+  moon_name:"Narvi",
+  discovered:"Narvi was discovered on April 8, 2003 by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna, from photos taken from Feb. 5 to 3 April 3.",
+  history: "Originally called S/2003 S1, Narvi was named for a son of Loki in Norse mythology.",
+  moon_radius:3.5
+},
+{
+  planet_id:6,
+  moon_name:"Paaliaq",
+  discovered:"Paaliaq was discovered on Aug. 7, 2000, by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, Hans Scholl, Matthew J. Holman, Brian G. Marsden, Phillip D. Nicholson, and Joseph A. Burns at the European Southern Observatory in La Silla, Chile. They discovered Ymir and Kiviuq at the same time.",
+  history: "Originally called S/2000 S2, Paaliaq was named for a fictional Inuit shaman in the book, 'The Curse of the Shaman,' by Michael Arvaarluk Kusugak and Vladyana Langer Krykorka. Kusugak is responsible for the names of four of the five known moons in the Inuit group. He wrote the book from which the name Ijiraq was taken, and he suggested the names Kiviuq and Siarnaq, which came from Inuit legend and mythology.",
+  moon_radius:11
+},
+{
+  planet_id:6,
+  moon_name:"Pallene",
+  discovered:"The Cassini imaging team discovered Pallene on June 1, 2004. Pallene and nearby Methone were the first moons discovered in Cassini images. After the discovery in 2004, scientists realized that Pallene had possibly been first photographed on August 23, 1981, by the space probe Voyager 2.",
+  history: "The name Pallene comes from the name in Greek mythology of one of seven Alkyonides, daughters of the god (or Titan) Alkyoneus who was born of Gaia and the blood of Uranus. Herakles (Hercules) killed their father in the war between the gods of Mount Olympus and the titans. Overcome by grief, the seven daughters threw themselves into the sea to die, but the goddess Amphitrite took pity on them and transformed them into halcyons or kingfishers.",
+  moon_radius:2.5
+},
+{
+  planet_id:6,
+  moon_name:"Pan",
+  discovered:"Pan was discovered by M.R. Showalter in 1990 using images taken by the Voyager 2 spacecraft nine years earlier.",
+  history: "Pan, a satyr (a creature resembling a man with the hind legs and hooves of a goat), is a Greek god of nature and the forest.",
+  moon_radius:14.1
+},
+{
+  planet_id:6,
+  moon_name:"Pandora",
+  discovered:"Pandora was discovered in October 1980 by the Voyager 1 science team.",
+  history: "Originally called S/1980 S26, Pandora was renamed in 1985. In mythology, Pandora (pan-DOR-uh) was a work of art who was transformed into a human by the gods. Her curiosity was said to have loosed all manner of ills upon the world when she let evil creatures out of a locked box; however, she is also responsible for hope entering the world ('hope' had been the last 'creature' in the box).",
+  moon_radius:40.7
 },
 
 ]
