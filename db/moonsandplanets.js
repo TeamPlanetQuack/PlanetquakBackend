@@ -347,17 +347,318 @@ const moonData = [
 },
 {
   planet_id:5,
-  moon_name:"Isonoe",
-  discovered:"Isonoe was discovered Nov. 23, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
-  history: "Originally called S/2000 J6, Isonoe was named for the mother of Orchomenus by Zeus, the Greek equivalent of the Roman god Jupiter. Isonoe was one of the 50 daughters of Danaus in Greek legend. ​",
-  moon_radius:1.9
+  moon_name:"S/2010 J2 Jupiter LII",
+  discovered:"This unnamed moon was discovered Sept. 8, 2010, at the Mauna Kea Observatories by Christian Veillet.",
+  history: "Since its discovery is now confirmed, it is temporarily being called Jupiter LII, which means it is the 52nd confirmed moon discovered at Jupiter. It was originally called S/2010 J2 was so designated because it is a satellite (S) that was discovered in 2010, and was the 1st satellite of Jupiter (J) to be found that year​",
+  moon_radius:2
 },
 {
   planet_id:5,
-  moon_name:"S/2010 J2 Jupiter LII",
-  discovered:"This unnamed moon was discovered Sept. 8, 2010, at the Mauna Kea Observatories by Christian Veillet.",
-  history: "Unnamed moon​",
+  moon_name:"S/2010 J1 Jupiter LI",
+  discovered:"This unnamed moon was discovered Sept. 7, 2010, with the 200-inch (5.1-meter) Hale Telescope at Palomar Observatory by Robert Jacobson.",
+  history: "Since its discovery is now confirmed, it is temporarily being called Jupiter LI, which means it is the 51st confirmed moon discovered at Jupiter. It was originally called S/2010 J1 was so designated because it is a satellite (S) that was discovered in 2010, and was the 1st satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Kale",
+  discovered:"Kale was discovered Dec. 9, 2001 by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2001 J8, Kale was named for one of the Graces, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter.​",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Kallichore",
+  discovered:"Kallichore was discovered on Feb. 6, 2003 by Scott S. Sheppard at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2003 J11, Kallichore was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Her name means 'beautiful in dance.'​",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Kalyke",
+  discovered:"Kalyke was discovered on Nov. 23, 2000 by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J2, Kalyke was named for the mother of Endymion by Zeus (the Greek equivalent of the Roman god Jupiter) according to some accounts in Greek mythology.​",
+  moon_radius:2.6
+},
+{
+  planet_id:5,
+  moon_name:"Kore",
+  discovered:"Kore was discovered on Feb. 8, 2003 by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2003 J14, Kore was named for a character in Greek mythology who was the daughter of Zeus (the Greek equivalent of the Roman god Jupiter) and Demeter, the goddess of agriculture.​",
+  moon_radius:1.0
+},
+{
+  planet_id:5,
+  moon_name:"Leda",
+  discovered:"Leda was discovered on Sept. 14, 1974 by Charles Thomas Kowal on plates taken from Sept. 11 through 13, 1974 with the 122-cm Schmidt telescope at Mount Palomar.",
+  history: "Leda was named for a woman in Greek mythology. According to one legend, she was seduced by Zeus (the Greek equivalent of the Roman god, Jupiter), who had taken the form of a swan. This pairing was depicted by a number of artists, including Leonardo da Vinci and Michelangelo. ​",
+  moon_radius:10
+},
+{
+  planet_id:5,
+  moon_name:"Lysithea",
+  discovered:"Lysithea was discovered on July 6, 1938 by Seth Barnes Nicholson with the 100-inch (2.5 m) Hooker telescope at the Mount Wilson Observatory.",
+  history: "Lysithea was named for one of the lovers of the Roman god Jupiter, or the Greek equivalent, Zeus.​",
+  moon_radius:18
+},
+{
+  planet_id:5,
+  moon_name:"Megaclite",
+  discovered:"Megaclite was discovered on Nov. 25, 2000 by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene A. Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J8, Megaclite was named for one of the adulterous conquests of the Roman god Jupiter.​",
+  moon_radius:2.7
+},
+{
+  planet_id:5,
+  moon_name:"Metis",
+  discovered:"Metis was discovered in March 1979 by the Voyager science team.",
+  history: "Originally designated S/1979 J 1, Metis is named for the first wife of Zeus who was swallowed by Zeus while pregnant with their first child.​",
+  moon_radius:21.5
+},
+{
+  planet_id:5,
+  moon_name:"Mneme",
+  discovered:"Mneme was discovered on Feb. 9, 2003 by Scott S. Sheppard and Brett Joseph Gladman at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally designated S/1979 J 1, Metis is named for the first wife of Zeus who was swallowed by Zeus while pregnant with their first child.​",
+  moon_radius:21.5
+},
+{
+  planet_id:5,
+  moon_name:"Orthosie",
+  discovered:"11 December 2001",
+  history: "Originally called S/2001 J9, Orthosie was named for one of the Horae, who were daughters of Jupiter and Themis, a Titaness, in Roman mythology. Orthosie means luck.​",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Pandia",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017 and originally designated S/2017 J4. The discovery announcement was made in July 2018.",
+  history: "Pandia is the daughter of Zeus and the Moon goddess Selene. Pandia is the goddess of the full moon and the sister of Ersa.​",
+  moon_radius:1.5
+},
+{
+  planet_id:5,
+  moon_name:"Pasiphae",
+  discovered:"Pasiphae was discovered on Jan. 27, 1908, by Philibert Jacques Melotte with the Greenwich Observatory's 30-inch Cassegrain telescope.",
+  history: "Pasiphae was named for the wife of Minos, who was king of Crete.​",
+  moon_radius:30
+},
+{
+  planet_id:5,
+  moon_name:"Pasithee",
+  discovered:"Pasithee was discovered on Dec. 11, 2001, by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2001 J6, Pasithee was named for one of the Graces, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. ​",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Philophrosyne",
+  discovered:"Philophrosyne was discovered in April 2003 by Scott S. Sheppard at the Mauna Kea Observatory in Hawaii, and originally designated S/2003 J15.",
+  history: "In mythology, Philophrosyne is the spirit of welcome and kindness and is the granddaughter of Zeus and sister of Eupheme.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Praxidike",
+  discovered:"Praxidike was discovered on Nov. 23, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J7, Praxidike was named for the Greek goddess of justice or punishment. She was the mother of Klesios, Harmonia and Arete by Zeus, the Greek equivalent of the Roman god Jupiter.",
+  moon_radius:3.4
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J10",
+  discovered:"S/2003 J10 was discovered in February 2003 by Scott Sander Sheppard at the Mauna Kea Observatory in Hawaii.",
+  history: "S/2003 J10 was so designated because it is a satellite (S) that was discovered in 2003, and was the 10th satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J12",
+  discovered:"S/2003 J12 was discovered between Feb. 6 and Mar. 7, 2003 by Scott S. Sheppard and others from the University of Hawaii's Institute for Astronomy at the Mauna Kea Observatory in Hawaii.",
+  history: "The name 'S/2003 J12' means that it is a satellite (S) that was discovered in 2003 orbiting Jupiter (J), and that it was the 12th satellite of Jupiter discovered that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J16",
+  discovered:"S/2003 J16 was discovered in April 2003 by Brett J. Gladman at the Mauna Kea Observatory in Hawaii.",
+  history: "S/2003 J16 was so designated because it is a satellite (S) that was discovered in 2003, and was the 16th satellite of Jupiter (J) to be found that year. ",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J18",
+  discovered:"S/2003 J18 was discovered in April 2003 by Brett Joseph Gladman at the Mauna Kea Observatory, Hawaii.",
+  history: "S/2003 J18 was so designated because it is a satellite (S) that was discovered in 2003, and was the 18th satellite of Jupiter (J) to be found that year.",
   moon_radius:2
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J19",
+  discovered:"S/2003 J19 was discovered in February 2003 by Brett J. Gladman at the Mauna Kea Observatory in Hawaii.",
+  history: "S/2003 J19 was so designated because it is a satellite (S) that was discovered in 2003, and was the 19th satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J2",
+  discovered:"S/2003 J2 was discovered in February or March 2003 at the Mauna Kea Observatory in Hawaii by Scott S. Sheppard, David C. Jewitt, Jan T. Kleyna, Yanga R. Fernandez, and Henry H. Hsieh.",
+  history: "S/2003 J2 was so designated because it is a satellite (S) that was discovered in 2003, and was the 2nd satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J23",
+  discovered:"S/2003 J23 was discovered in 2003 by Scott S. Sheppard at the Mauna Kea Observatory in Hawaii.",
+  history: "S/2003 J23 was so designated because it is a satellite (S) that was discovered in 2003, and was the 23rd satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J24",
+  discovered:"This unnamed moon was discovered in 2003 by S.S. Sheppard, D.C. Jewitt, J. Kleyna, B.J. Gladman, C. Veillet.",
+  history: "S/2003 J24 was so designated because it is a satellite (S) that was discovered in 2003, and was the 24th satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J4",
+  discovered:"S/2003 J4 was discovered in 2003 by Scott S. Sheppard, David C. Jewitt, Jan T. Kleyna, Yanga R. Fernandez, and Henry H. Hsieh at the Mauna Kea Observatory in Hawaii.",
+  history: "S/2003 J4 was so designated because it is a satellite (S) that was discovered in 2003, and was the 4th satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2003 J9",
+  discovered:"S/2003 J9 was discovered in February 2003 by Scott Sander Sheppard Sheppard at the Mauna Kea Observatory in Hawaii.",
+  history: "S/2003 J9 was so designated because it is a satellite (S) that was discovered in 2003, and was the 9th satellite of Jupiter (J) to be found that year.",
+  moon_radius:0.5
+},
+{
+  planet_id:5,
+  moon_name:"S/2011 J1",
+  discovered:"S/2011 J 1 S/2011 J 1 was discovered in 2011 by Scott S. Sheppard with digital images obtained with the Magellan-Baade 6.5 meter telescope at Las Campanas Observatory.",
+  history: "S/2011 J1 was so designated because it is a satellite (S) that was discovered in 2011, and was the first satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2011 J2",
+  discovered:"S/2011 J 2 was discovered in 2011 by Scott S. Sheppard with digital images obtained with the Magellan-Baade 6.5 meter telescope at Las Campanas Observatory.",
+  history: "S/2011 J2 was so designated because it is a satellite (S) that was discovered in 2011, and was the second satellite of Jupiter (J) to be found that year. ",
+  moon_radius:0.5
+},
+{
+  planet_id:5,
+  moon_name:"S/2016 J1",
+  discovered:"This tiny, unnamed moon of Jupiter was first spotted in 2016 by Scott S. Sheppard with the Carnegie Institution for Science.",
+  history: "S/2016 J1 was so designated because it is a satellite (S) that was discovered in 2016, and was the first satellite of Jupiter (J) to be found that year.",
+  moon_radius:0.5
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J1",
+  discovered:"This tiny moon of Jupiter was first spotted in 2016. The discovery announcement was made in June 2017.",
+  history: "S/2017 J1 was so designated because it is a satellite (S) that was discovered in 2017, and was the first satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J2",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J2 was so designated because it is a satellite (S) that was discovered in 2017, and was the second satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J3",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J3 was so designated because it is a satellite (S) that was discovered in 2017, and was the third satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J5",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J5 was so designated because it is a satellite (S) that was discovered in 2017, and was the fifth satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J6",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J6 was so designated because it is a satellite (S) that was discovered in 2017, and was the sixth satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J7",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J7 was so designated because it is a satellite (S) that was discovered in 2017, and was the seventh satellite of Jupiter (J) to be found that year.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J8",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J8 was so designated because it is a satellite (S) that was discovered in 2017, and was the eigth satellite of Jupiter (J) to be found that year.",
+  moon_radius:0.5
+},
+{
+  planet_id:5,
+  moon_name:"S/2017 J9",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018.",
+  history: "S/2017 J9 was so designated because it is a satellite (S) that was discovered in 2017, and was the ninth satellite of Jupiter (J) to be found that year.",
+  moon_radius:1.5
+},
+{
+  planet_id:5,
+  moon_name:"Sponde",
+  discovered:"Sponde was discovered Dec. 9, 2001, by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2001 J5, Sponde was named for one of the Horae, who were daughters of Themis and Zeus, the Greek equivalent of the Roman god, Jupiter.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Taygete",
+  discovered:"Taygete was discovered Nov. 25, 2000, by Scott S. Sheppard, David C. Jewitt, Yanga R. Fernandez, and Eugene Magnier at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2000 J9, Taygete was named for one of the Pleiades, who were the seven daughters of Atlas.",
+  moon_radius:2.5
+},
+{
+  planet_id:5,
+  moon_name:"Thebe",
+  discovered:"Thebe was discovered in 1980 by the Voyager science team from images taken by Voyager 1.",
+  history: "The satellite originally called S/1979 J2 was ultimately named 'Thebe,' a name associated with Jupiter — or his Greek equivalent, Zeus — in a variety of ways in different myths. In one, Thebe was a nymph who was a love of Zeus. In another, she was an Egyptian king's daughter and a love of Jupiter.",
+  moon_radius:49
+},
+{
+  planet_id:5,
+  moon_name:"Thelxinoe",
+  discovered:"Thelxinoe was discovered on Feb. 9, 2003, by Scott S. Sheppard and Brett J. Gladman at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2003 J22, Thelxinoe was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Thelxinoe means charm.",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Themisto",
+  discovered:"Themisto was initially discovered on Sept. 30, 1975, by Charles Thomas Kowal and Elizabeth Roemer. It was subsequently lost until 2000, when it was rediscovered by Scott S. Sheppard, David C. Jewitt, Yanga Roland Fernandez and Eugene A. Magnier as part of a systematic search for small irregular Jovian moons. ",
+  history: "Themisto was originally called S/1975 J1 and then S/2000 J1 when it was rediscovered. Its current name comes from the Greek mythological character who was the mother of Ister by Zeus, the Greek equivalent of the Roman god Jupiter.",
+  moon_radius:4
+},
+{
+  planet_id:5,
+  moon_name:"Thyone",
+  discovered:"Thyone was discovered on Dec. 11, 2001, by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
+  history: "Originally called S/2001 J2, Thyone was named for the mother (originally named Semele) of Dionysos by Zeus, the Greek equivalent of the Roman god Jupiter. ",
+  moon_radius:2
+},
+{
+  planet_id:5,
+  moon_name:"Valetudo",
+  discovered:"This tiny moon of Jupiter was first spotted in 2017. The discovery announcement was made in July 2018. ",
+  history: "The name Valetudo has been proposed, after the Roman god Jupiter’s great-granddaughter, the goddess of health and hygiene.",
+  moon_radius:0.5
 },
 ]
 
