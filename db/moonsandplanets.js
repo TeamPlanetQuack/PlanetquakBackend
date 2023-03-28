@@ -1358,8 +1358,92 @@ const moonData = [
   planet_id:7,
   moon_name:"Oberon",
   discovered:"Oberon was discovered in Jan. 11, 1787 by William Herschel.",
-  history: "Miranda was named for the daughter of Prospero in William Shakespeare's play, 'The Tempest.'​​",
-  moon_radius:235.8
+  history: "Named by Herschel's son John in early 19th century for the king of the fairies in Shakespeare's 'A Midsummer Night's Dream.'​",
+  moon_radius:761.4
+},
+{
+  planet_id:7,
+  moon_name:"Ophelia",
+  discovered:"Ophelia was discovered in January 1986 in images sent back by the Voyager 2 spacecraft during its flyby of Uranus.",
+  history: "This moon was originally designated S/1986 U8, but was later renamed for the character of Ophelia in Shakespeare's 'Hamlet.' Ophelia is the daughter of Polonius and fiance of Hamlet in the play.​",
+  moon_radius:21.4
+},
+{
+  planet_id:7,
+  moon_name:"Perdita",
+  discovered:"Perdita was discovered 13 years after its picture was taken by Voyager 2 during the spacecraft's flyby in 1986. University of Arizona's Erich Karkoschka found the moon in the public archive of Voyager 2 images when he compared them with those of the Hubble Space Telescope. The International Astronomical Union (IAU) recognized it as a moon of Uranus, but withdrew its designation as premature when subsequent efforts failed to observe it. Its existence was finally confirmed, however, in 2003, when the Hubble imaged an object right in Perdita's predicted location.",
+  history: "Originally called S/1986 U10, Perdita was named for the daughter of Leontes and Hermione in William Shakespeare's play, 'The Winter's Tale.' In the play Leontes initially refuses to believe that Perdita is his daughter because he thinks that his wife has had an affair with king Polixenes of Bohemia. Circumstances lead to Perdita being abandoned by her father and later found and raised by a Bohemian shepherd. 16 years later Bohemian Prince Florizel meets and falls in love with Perdita and it is revealed that she is the princess of Sicily. Perdita's father Leontes reconciles his differences with king Polixenes, and the marriage is ratified.​",
+  moon_radius:15
+},
+{
+  planet_id:7,
+  moon_name:"Portia",
+  discovered:"Portia was discovered January 1986 in images sent back by the Voyager 2 spacecraft during its flyby of Uranus.",
+  history: "This moon is named after Portia, the heroine of William Shakespeare's 16th century play 'The Merchant of Venice.' It was originally designated S/1986 U 1​​",
+  moon_radius:67.6
+},
+{
+  planet_id:7,
+  moon_name:"Prospero",
+  discovered:"Prospero was discovered July 18, 1999 by Matthew J. Holman, John J. Kavelaars, Brett J. Gladman, Jean-Marc Petit, and Hans Scholl using the Canada-France-Hawaii Telescope at the Mauna Kea Observatory on the island of Hawaii. They discovered Setebos and Stephano at the same time.",
+  history: "Originally called S/1999 U3, Prospero was named for a sorcerer in William Shakespeare's play, 'The Tempest.' Prospero, rightfully Duke of Milan, has his dukedom usurped by his brother Antonio with the help of Alonso, King of Naples. He is forced to flee with his daughter Miranda to an island in the Mediterranean, where he perfects his magical powers, hoping to use them to regain his dukedom.​​",
+  moon_radius:25
+},
+{
+  planet_id:7,
+  moon_name:"Puck",
+  discovered:"Puck was discovered December 1985 in images sent back by the Voyager 2 spacecraft during its flyby of Uranus.",
+  history: "Originally designated S/1985 U1, Puck is named for a mischievous sprite in William Shakespeare's 'A Midsummer Night's Dream.'​",
+  moon_radius:81
+},
+{
+  planet_id:7,
+  moon_name:"Rosalind",
+  discovered:"Rosalind was discovered by the Voyager 2 science team on 13 January 1986.",
+  history: "Originally designated S/1986 U4, Rosalind was named for the daughter of a banished Duke in Shakespeare's play 'As You Like It.'​​",
+  moon_radius:36
+},
+{
+  planet_id:7,
+  moon_name:"Setebos",
+  discovered:"Setebos was discovered on July 18, 1999 by John J. Kavelaars, Brett Gladman, Matthew Holman, Jean-Marc Petit, and Hans Scholl Using the Canada-France-Hawaii Telescope at the Mauna Kea Observatory on the island of Hawaii. They discovered Prospero and Stephano at the same time.",
+  history: "Originally called S/1999 U1, Setebos was the name of a South American (Patagonian) deity, which William Shakespeare used as the god worshipped by Sycorax the witch and her son Caliban in the play, 'The Tempest.'​",
+  moon_radius:24
+},
+{
+  planet_id:7,
+  moon_name:"Stephano",
+  discovered:"Stephano was discovered on July 18, 1999 by Brett Gladman, Matthew Holman, John J. Kavelaars, Jean-Marc Petit, and Hans Scholl using the Canada-France-Hawaii Telescope at the Mauna Kea Observatory on the island of Hawaii. They discovered Prospero and Setebos at the same time.",
+  history: "Originally called S/1999 U2, Stephano was named for a boisterous butler of King Alonso in William Shakespeare's play, 'The Tempest.'​",
+  moon_radius:16
+},
+{
+  planet_id:7,
+  moon_name:"Sycorax",
+  discovered:"Sycorax was discovered on Sept. 6, 1997 by Philip D. Nicholson, Brett J. Gladman, Joseph A. Burns and John J. Kavelaars using the 200-inch Hale Telescope at Palomar Observatory. They discovered another Uranian moon at the same time, which was named Caliban after the son of Sycorax in Shakespeare's play.",
+  history: "Originally called S/1997 U2, Sycorax was named for a witch who was the mother of Caliban in William Shakespeare's play, 'The Tempest,' and who has died before the action of the play begins.​",
+  moon_radius:75
+},
+{
+  planet_id:7,
+  moon_name:"Titania",
+  discovered:"Titania was discovered on Jan. 11, 1787 by British astronomer William Herschel.",
+  history: "Titania is named for the queen of the fairies in William Shakespeare's 16th century play 'A Midsummer Night's Dream.'",
+  moon_radius:788.9
+},
+{
+  planet_id:7,
+  moon_name:"Trinculo",
+  discovered:"Trinculo was discovered on Aug. 13, 2001 by Matthew Holman, John J. Kavelaars and Dan Milisavljevic at the Dominion Astrophysical Observatory in Victoria, British Columbia, and by using the 4-m reflector at the Cerro Tololo Inter-American Observatory in Chile.",
+  history: "Originally called S/2001 U1, Trinculo was named for the jester in Shakespeare's play 'The Tempest.'",
+  moon_radius:9
+},
+{
+  planet_id:7,
+  moon_name:"Umbriel",
+  discovered:"Umbriel was discovered on Oct. 24, 1851 by English astronomer William Lassell.",
+  history: "Umbriel is named for a malevolent spirit in English poet Alexander Pope's 18th century poem 'Rape of the Lock.'",
+  moon_radius:584.7
 },
 
 ]
