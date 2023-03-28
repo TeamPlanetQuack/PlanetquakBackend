@@ -12,6 +12,12 @@ const cors =require('cors');
 server.use(cors());
 server.use(express.json());
 
+server.get('/', (req,res) => {
+  res.json({
+      message: "You have connected to the API Server"
+  })
+})
+
 server.use((req,res, next)=>{
   console.log("<___Body Logger START____>");
   console.log(req.method);
