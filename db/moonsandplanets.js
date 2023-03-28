@@ -320,6 +320,13 @@ const moonData = [
 {
   planet_id:5,
   moon_name:"Herse",
+  discovered:"Herse was discovered on Feb. 27, 2003 by Brett J. Gladman, John J. Kavelaars, Jean-Marc Petit, and Lynne Allen.",
+  history: "Originally called S/2003 J17, Herse was named for a daughter of Selene (goddess of the moon) and Zeus, the Greek equivalent of the Roman god Jupiter.​",
+  moon_radius:1
+},
+{
+  planet_id:5,
+  moon_name:"Himalia",
   discovered:"Himalia was discovered on 3 December 1904 by Charles Dillon Perrine in photographs taken with the Crossley 36-inch (0.9 meter) reflector of the Lick Observatory on Mount Hamilton at the University of California, San Jose.",
   history: "Himalia was named for a nymph of the island of Rhodes in Greek mythology who was one of the lovers of Zeus (the Greek equivalent of the Roman god Jupiter). She bore him three sons: Spartaeus, Cronios and Cytus. ​",
   moon_radius:85
@@ -613,6 +620,13 @@ const moonData = [
 },
 {
   planet_id:5,
+  moon_name:"Sinope",
+  discovered:"Sinope was discovered on July 21, 1914, by Seth Barnes Nicholson on photographic plates taken with the Lick Observatory's 36-inch (0.9 meter) telescope.",
+  history: "Sinope was named for a nymph who outsmarted a smitten Zeus (the Greek equivalent of the Roman god Jupiter). Hoping to win her favor, he offered her anything she wanted and she replied that what she wanted was to remain a virgin. Sinope outsmarted Apollo in the same way.",
+  moon_radius:19
+},
+{
+  planet_id:5,
   moon_name:"Sponde",
   discovered:"Sponde was discovered Dec. 9, 2001, by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna at the Mauna Kea Observatory in Hawaii.",
   history: "Originally called S/2001 J5, Sponde was named for one of the Horae, who were daughters of Themis and Zeus, the Greek equivalent of the Roman god, Jupiter.",
@@ -661,7 +675,7 @@ const moonData = [
   moon_radius:0.5
 },
 //Saturns moons start here
-{
+  {
   planet_id:6,
   moon_name:"Aegaeon",
   discovered:"Scientists imaged the moonlet on Aug. 15, 2008, and then confirmed its presence by finding it in two earlier images. The moonlet is too small to be resolved by Cassini's cameras, so its size cannot be measured directly. However, Cassini scientists estimated the moonlet's size by comparing its brightness to another small Saturnian moon, Pallene.",
@@ -1242,6 +1256,112 @@ const moonData = [
   history: "Originally called S/2000 S1, Ymir was named for the first living being in Norse mythology, the first of a race of frost giants. Odin and his brothers killed Ymir and used his body parts to fashion the Earth. His skull became the heavens.​",
   moon_radius:9
 },
+{
+  planet_id:7,
+  moon_name:"Ariel",
+  discovered:"Ariel was discovered Oct. 24, 1851 by William Lassell, one of 19th century England's grand amateur astronomers, who used the fortune he made in the brewery business to finance his telescopes.",
+  history: "In 'The Tempest,' Ariel is a spirit who serves Prospero, a magician who rescued Ariel from a tree in which he had been imprisoned by a witch called Sycorax. Both Prospero and Sycorax were taken as the names of other Uranian moons.​",
+  moon_radius:578.9
+},
+{
+  planet_id:7,
+  moon_name:"Belinda",
+  discovered:"Belinda was discovered on Jan. 13, 1986 in images taken by Voyager 2. It is one of the 10 Uranian satellites discovered by the Voyager science team.",
+  history: "Originally called S/1986 U5, Belinda was named after the character whose lock of hair is stolen in Alexander Pope's 'Rape of the Lock.'​​",
+  moon_radius:40.3
+},
+{
+  planet_id:7,
+  moon_name:"Bianca",
+  discovered:"Bianca was discovered Jan. 23, 1986 in images taken by Voyager 2. It is one of the 10 Uranian satellites discovered by the Voyager science team.",
+  history: "Originally called S/1986 U9, Bianca was named after the sister of Katharina (Kate) in Shakespeare's play, 'The Taming of the Shrew.'",
+  moon_radius:25.7
+},
+{
+  planet_id:7,
+  moon_name:"Caliban",
+  discovered:"Caliban was discovered on Sept. 6, 1997 at Palomar Observatory by B. Gladman, P. Nicholson, J. A. Burns, and J. Kavelaars. This group of astronomers also discovered another Uranian moon at the same time, which was named Sycorax after the mother of Caliban in William Shakespeare's play The Tempest.",
+  history: "Originally called S/1997 U1, Caliban was named for a character in Shakespeare's play, 'The Tempest.' Caliban was forced into labor on an island owned by Prospero. He was human, but 'not honour'd with a human shape,' and is referred to as a mooncalf or freckled monster.",
+  moon_radius:36
+},
+{
+  planet_id:7,
+  moon_name:"Codelia",
+  discovered:"Cordelia was discovered on Jan. 20, 1986 in images taken by Voyager 2. It is one of the 10 Uranian satellites discovered by the Voyager science team.",
+  history: "Originally called S/1986 U7, Cordelia was named for one of the youngest daughters of King Lear in William Shakespeare's play of the same name. King Lear disowns Cordelia for her refusal to flatter him. Others think highly of her, and the King of France marries her for her virtue alone. Cordelia forgives her father in spite of his cruelty toward her and remains loyal to him.",
+  moon_radius:20.1
+},
+{
+  planet_id:7,
+  moon_name:"Cressida",
+  discovered:"Cressida was discovered on Jan. 9, 1986 in images taken by Voyager 2. It is one of the 10 Uranian satellites discovered by the Voyager science team.",
+  history: "Originally called S/1986 U3, Cressida was named for the title character in William Shakespeare's play, 'Troilus and Cressida.'",
+  moon_radius:39.8
+},
+{
+  planet_id:7,
+  moon_name:"Cupid",
+  discovered:"Cupid was discovered on Aug. 25, 2003 by M.R. Showalter and J.J. Lissauer, using the Hubble Space Telescope.",
+  history: "Originally called S/2003 U2, Cupid was named for the Roman god of love, who appears in William Shakespeare's play, 'Timon of Athens' (in keeping with the custom of naming most of Uranus' moons after Shakespearean characters).",
+  moon_radius:18
+},
+{
+  planet_id:7,
+  moon_name:"Desdemona",
+  discovered:"Desdemona was discovered on Jan. 13 1986 in images taken by Voyager 2. It is one of the 10 Uranian satellites discovered by the Voyager science team.",
+  history: "Originally called S/1986 U6, Desdemona was named after the wife of Othello in William Shakespeare's play, 'Othello, the Moor of Venice.' Desdemona is the daughter of a Venetian senator.",
+  moon_radius:32
+},
+{
+  planet_id:7,
+  moon_name:"Ferdinand",
+  discovered:"Ferdinand was discovered on Aug, 13, 2001 by Dan Milisavljevic, Matthew J. Holman, John J. Kavelaars, and Tommy Grav, at the Cerro Tololo Inter-American Observatory.",
+  history: "Originally called S/2001 U2, Ferdinand was named for the son of Alonso, king of Naples in William Shakespeare's play, 'The Tempest.' Ferdinand eventually marries Miranda, daughter of Prospero, and aids his father-in-law in regaining his Dukedom in Milan.",
+  moon_radius:10
+},
+{
+  planet_id:7,
+  moon_name:"Francisco",
+  discovered:"Francisco was discovered on Aug. 13, 2001 at Cerro Tololo Inter-American Observatory by John J. Kavalaars, Matthew J. Holman, Dan Milisavljevic, and Tommy Grav.",
+  history: "Originally called S/2001 U3, Francisco was named after a character in William Shakespeare's play, 'The Tempest.' Francisco is a nobleman who is shipwrecked along with King Alonso (father of Ferdinand) and others.",
+  moon_radius:11
+},
+{
+  planet_id:7,
+  moon_name:"Juliet",
+  discovered:"Juliet was discovered on Jan. 3, 1986 in images taken by Voyager 2. It is one of the 10 Uranian satellites discovered by the Voyager science team.",
+  history: "Originally called S/1986 U2, Juliet was named for the title character in William Shakespeare's play, 'Romeo and Juliet.' Juliet is the daughter of the Capulets, who are sworn enemies to the Montagues. Nevertheless, she falls in love with Romeo, son of the Montagues.",
+  moon_radius:46.8
+},
+{
+  planet_id:7,
+  moon_name:"Mab",
+  discovered:"Mab was discovered on Aug. 23, 2003 by Mark R. Showalter and Jack J. Lissauer, using the Hubble Space Telescope.",
+  history: "Mab is queen of the fairies in English folklore. She is mentioned in a speech given in William Shakespeare's play, 'Romeo and Juliet,' so the name is at least somewhat in keeping with the practice of naming most Uranian moons after characters in Shakespeare's plays. The original designation for this moon was S/2003 U1.​",
+  moon_radius:24
+},
+{
+  planet_id:7,
+  moon_name:"Margaret",
+  discovered:"Margaret was discovered on Aug. 29, 2003 by Scott S. Sheppard and David C. Jewitt with the Subaru 8.2-m reflector at the Mauna Kea Observatory on the island of Hawaii.",
+  history: "Originally called S/2003 U3, Margaret was named after a woman who serves Hero in William Shakespeare's play, 'Much Ado About Nothing.'​",
+  moon_radius:10
+},
+{
+  planet_id:7,
+  moon_name:"Miranda",
+  discovered:"Miranda was discovered in telescopic photos of the Uranian system by Gerard P. Kuiper on Feb. 16, 1948 at the McDonald Observatory in western Texas. It was the last moon of Uranus to be discovered prior to Voyager 2's visit in 1986.",
+  history: "Miranda was named for the daughter of Prospero in William Shakespeare's play, 'The Tempest.'​​",
+  moon_radius:235.8
+},
+{
+  planet_id:7,
+  moon_name:"Oberon",
+  discovered:"Oberon was discovered in Jan. 11, 1787 by William Herschel.",
+  history: "Miranda was named for the daughter of Prospero in William Shakespeare's play, 'The Tempest.'​​",
+  moon_radius:235.8
+},
+
 ]
 
 module.exports = {
