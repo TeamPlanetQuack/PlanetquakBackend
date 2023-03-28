@@ -130,8 +130,12 @@ async function testDB(){
   console.log(largeMoons, "moons bigger then 1000km")
 
   console.log("Counting moons on planets")
-  const moonCount= await countMoonsByPlanetId(5)
-  console.log(moonCount, "are how many moons Jupiter has")
+  const jupCount= await countMoonsByPlanetId(5)
+  console.log(jupCount, "are how many moons Jupiter has")
+
+  console.log("Counting moons on planets")
+  const satCount= await countMoonsByPlanetId(6)
+  console.log(satCount, "are how many moons Saturn has")
 }
 
 buildingDB()
