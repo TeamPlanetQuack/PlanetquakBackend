@@ -1445,6 +1445,104 @@ const moonData = [
   history: "Umbriel is named for a malevolent spirit in English poet Alexander Pope's 18th century poem 'Rape of the Lock.'",
   moon_radius:584.7
 },
+{
+  planet_id:8,
+  moon_name:"Despina",
+  discovered:"Despina was discovered in July 1989 by the Voyager 2 science team.",
+  history: "Despina is a daughter of Poseidon (the Roman god Neptune) and Demeter. Despina was originally designated S/1989 N3.",
+  moon_radius:75
+},
+{
+  planet_id:8,
+  moon_name:"Galatea",
+  discovered:"Galatea was discovered in July 1989 by the Voyager 2 science team.",
+  history: "Galatea was a sea nymph who attended to Poseidon (the Roman god Neptune). The nymphs are also known as the Nereids. The moon was originally designated S/1989 N 4.",
+  moon_radius:88
+},
+{
+  planet_id:8,
+  moon_name:"Halimede",
+  discovered:"Halimede was discovered Aug. 14, 2002 by Matthew J. Holman, John J. Kavelaars, Tommy Grav, Wesley C. Fraser, and Dan Milisavljevic using images taken by the 4.0-meter Blanco telescope at the Cerro Tololo Inter-American Observatory in Chile and the 3.6-meter Canada-France-Hawaii Telescope in Hawaii.",
+  history: "Moons of Neptune are named for characters from Greek or Roman mythology associated with Neptune or Poseidon, or the oceans. Irregular satellites are named for the Nereids, daughters of Nereus and Doris and the attendants of Neptune. Halimede is named after one of the Nereids. Halimede was originally designated S/2002 N 1.",
+  moon_radius: 31
+},
+{
+  planet_id:8,
+  moon_name:"Hippocamp",
+  discovered:"Hippocamp, originally designated S/2004 N1, was discovered by Mark Showalter on July 1, 2013 using Hubble Space Telescope images taken of the Neptune system between 2004 and 2009.",
+  history: "Hippocamp is a half-horse half-fish from Greek mythology. The scientific name for the seahorse is Hippocampus, also the name of an important part of the human brain.",
+  moon_radius: 9
+},
+{
+  planet_id:8,
+  moon_name:"Laomedeia",
+  discovered:"Laomedeia was discovered Aug. 13, 2002 by Matthew J. Holman, John J. Kavelaars, Tommy Grav, Wesley C. Fraser, and Dan Milisavljevic using images taken by the 4.0-meter Blanco telescope at the Cerro Tololo Inter-American Observatory in Chile and the 3.6-meter Canada-France-Hawaii Telescope in Hawaii.",
+  history: "Irregular satellites are named for the Nereids, daughters of Nereus and Doris and the attendants of Neptune. Laomedeia is named for one of the Nereids. Laomedeia was originally designated as S/2002 N 3.",
+  moon_radius: 21
+},
+{
+  planet_id:8,
+  moon_name:"Larissa",
+  discovered:"Although it was initially spotted by H. Reitsema, W. Hubbard, L. Lebofsky, and D. Tholen through ground-based telescopes in 1981, Larissa was officially discovered in July 1989 by the Voyager 2 science team.",
+  history: "Larissa was a nymph from Greek mythology. The moon was originally designated S/1989 N 2.",
+  moon_radius: 97
+},
+{
+  planet_id:8,
+  moon_name:"Naiad",
+  discovered:"Naiad was the last moon to be discovered during the Voyager 2 flyby in September 1989.",
+  history: "Naiad is named after a type of nymph who presided over fountains, wells, springs, streams, and brooks in Greek mythology. Naiad was originally designated S/1989 N 6.",
+  moon_radius: 33
+},
+{
+  planet_id:8,
+  moon_name:"Nereid",
+  discovered:"Nereid was discovered on May 1, 1949 by Gerard P. Kuiper with a ground-based telescope. It was the last satellite of Neptune to be discovered before Voyager 2's discoveries four decades later.",
+  history: "Nereid is named after the Nereids, sea-nymphs, in Greek mythology.",
+  moon_radius: 170
+},
+{
+  planet_id:8,
+  moon_name:"Neso",
+  discovered:"Neso was discovered in 2002 by Matthew J. Holman, John J. Kavelaars, Tommy Grav, Wesley C. Fraser, and Dan Milisavljevic using the 4-m Blanco telescope at Cerro Tololo Observatory in Chile.",
+  history: "Neso like many of the outer satellites of Neptune, is named after one of the Nereids. Neso was originally designated S/2002 N 4.",
+  moon_radius: 30
+},
+{
+  planet_id:8,
+  moon_name:"Proteus",
+  discovered:"Proteus was discovered in 1989 by the Voyager 2 spacecraft. This is unusual since a smaller moon, Nereid, was discovered 33 years earlier using an Earth-based telescope. Proteus was most likely overlooked because it is so dark and the distance between Earth and Neptune is so great.",
+  history: "Proteus is named after the shape-changing sea god of Greek mythology. Proteus was originally designated S/1989 N 1.",
+  moon_radius: 210
+},
+{
+  planet_id:8,
+  moon_name:"Psamathe",
+  discovered:"Psamathe was discovered by Scott S. Sheppard, David C. Jewitt and Jan T. Kleyna Aug. 29, 2003 using the 8.3-m Subaru reflector at the Mauna Kea Observatory on the island of Hawaii.",
+  history: "Psamathe like many of the satellites of Neptune, is named after one of the Nereids. Psamathe was originally designated S/2003 N 1.",
+  moon_radius: 20
+},
+{
+  planet_id:8,
+  moon_name:"Sao",
+  discovered:"Sao was discovered Aug. 14, 2002 by Tommy Grav, Matthew J. Holman, John J. Kavelaars, Wesley C. Fraser, and Dan Milisavljevic using images taken by the 4.0-m Blanco telescope at the Cerro Tololo Inter-American Observatory in Chile and the 3.6-m Canada-France-Hawaii Telescope in Hawaii. ",
+  history: "Moons of Neptune are named for characters from Greek or Roman mythology associated with Neptune or Poseidon, or the oceans.",
+  moon_radius: 22
+},
+{
+  planet_id:8,
+  moon_name:"Thalassa",
+  discovered:"Thalassa was discovered in August 1989 in images taken by Voyager 2.",
+  history: "Thalassa was named after a daughter of Aether and Hemera from Greek mythology. Thalassa is also the Greek word for sea. ",
+  moon_radius: 41
+},
+{
+  planet_id:8,
+  moon_name:"Triton",
+  discovered:"Triton was discovered on Oct. 10, 1846 by British astronomer William Lassell, just 17 days after Neptune itself was discovered.",
+  history: "Triton is named after the son of Poseidon (the Greek god comparable to the Roman Neptune). Until the discovery of the second moon Nereid in 1949, Triton was commonly known as simply 'the satellite of Neptune.'",
+  moon_radius: 1353.4
+},
 
 ]
 
