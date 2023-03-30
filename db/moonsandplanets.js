@@ -33,7 +33,7 @@ const planetData = [
     sun_distance: "150 million km",
     type: "rocky",
     moon_num: 1,
-    facts: ["Earth resides within the “habitable zone” of the Sun. This is the perfect distance from the Sun in which the temperatures are just right for liquid water to exist on the surface.", "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life.", "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life."]
+    facts: ["Earth resides within the “habitable zone” of the Sun. This is the perfect distance from the Sun in which the temperatures are just right for liquid water to exist on the surface.", "Earth is the only planet in our solar system with liquid water on the surface. This is what makes it the most unique and capable of sustaining life.", "Earth is tilted on its axis at 23.4 degrees. This tilt results in different parts of Earth getting more direct sunlight at different times of the year. The effect that this has is the seasons: Summer, Autumn, Winter, Spring."]
   },
   {
     name: "Mars",
@@ -1542,9 +1542,9 @@ const moonData = [
   discovered:"Triton was discovered on Oct. 10, 1846 by British astronomer William Lassell, just 17 days after Neptune itself was discovered.",
   history: "Triton is named after the son of Poseidon (the Greek god comparable to the Roman Neptune). Until the discovery of the second moon Nereid in 1949, Triton was commonly known as simply 'the satellite of Neptune.'",
   moon_radius: 1353.4
-}
-]
+},
 
+]
 const dwarfData = [
   {
     // name: "Mercury",

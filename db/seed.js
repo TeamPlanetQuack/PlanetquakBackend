@@ -2,9 +2,9 @@ const { client } = require("./client");
 const bcrypt = require("bcrypt");
 const {getAllPlanets, createPlanet, getPlanetByName} = require("./index");
 const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName, getMoonsSmallerThan, getMoonsBiggerThan, countMoonsByPlanetId } = require("./moons");
-const {getAllDwarfPlanets, createDwarfPlanet, getDwarfPlanetByName} = require("./dwarf_planets")
-
-const { planetData, moonData, dwarfData } = require("./moonsandplanets");
+const { planetData, moonData } = require("./moonsandplanets");
+const { quizQuestions } = require("./quizdata");
+const { createQuestion } = require("./questions");
 
 
 
@@ -12,14 +12,14 @@ async function dropTables() {
   try {
     console.log("Starting to drop tables...");
     await client.query(`
-
+    DROP TABLE IF EXISTS questions;
+    DROP TABLE IF EXISTS dwarf;
     DROP TABLE IF EXISTS moons;
     DROP TABLE IF EXISTS planets;
-    DROP TABLE IF EXISTS dwarf;
-    DROP TYPE IF EXISTS planet_name;
-    DROP TYPE IF EXISTS planet_type;
     DROP TYPE IF EXISTS dwarf_name;
     DROP TYPE IF EXISTS dwarf_type;
+    DROP TYPE IF EXISTS planet_name;
+    DROP TYPE IF EXISTS planet_type;
     `);
     console.log("Finished dropping tables");
   } catch (error) {
@@ -36,7 +36,6 @@ async function createTables(){
     CREATE TYPE planet_type AS ENUM ('gas', 'rocky');
     CREATE TYPE dwarf_name AS ENUM ('Pluto', 'Ceres', 'Makemake', 'Haumea', 'Eris');
     CREATE TYPE dwarf_type AS ENUM ('gas', 'rocky');
-
 
     CREATE TABLE planets (
       id SERIAL PRIMARY KEY,
@@ -71,6 +70,15 @@ async function createTables(){
       type planet_type,
       facts TEXT[]
   );
+
+    CREATE TABLE questions (
+      id SERIAL PRIMARY KEY,
+      question text NOT NULL,
+      correct_answer text NOT NULL,
+      incorrect_answers TEXT [] NOT NULL
+    );
+
+
     `);
     console.log("Finished building tables");
   } catch (error) {
@@ -102,12 +110,12 @@ async function createInitialMoons(){
 throw error;
   }
 }
-async function createInitialDwarfPlanets(){
+async function createInitialQuestions(){
   try {
 
-    console.log("Starting to create dwarf")
-    await Promise.all(dwarfData.map(createDwarfPlanet))
-    console.log("Finished creating dwarf planets")
+    console.log("Starting to create quiz questions")
+    await Promise.all(quizQuestions.map(createQuestion))
+    console.log("Finished creating questions")
 
   } catch (error) {
 throw error;
@@ -121,7 +129,7 @@ async function buildingDB() {
     await createTables();
     await createInitialPlanets();
     await createInitialMoons();
-    await createInitialDwarfPlanets();
+    await createInitialQuestions();
   } catch (error) {
     console.log("error during building");
     throw error;
@@ -129,10 +137,6 @@ async function buildingDB() {
 }
 async function testDB(){
   console.log("Starting to test database");
-
-  console.log("all dwarf planets");
-  const allDwarfPlanets= await getAllDwarfPlanets()
-  console.log(allDwarfPlanets, "All the dwarf planets")
 
   console.log("all planets");
   const allPlanets= await getAllPlanets()
