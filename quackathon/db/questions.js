@@ -48,5 +48,6 @@ async function createQuestion({
 
   module.exports = {
     createQuestion,
-    getAllQuestions
+    getAllQuestions,
+    getTenQuestions
   };
