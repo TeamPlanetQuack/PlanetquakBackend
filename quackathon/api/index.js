@@ -12,12 +12,16 @@ apiRouter.get("/", (req, res, next) => {
 });
 
 
+const questionsRouter = require("./questions");
+apiRouter.use("/questions", questionsRouter);
 
 const planetRouter = require("./planets");
 apiRouter.use("/planets", planetRouter);
 
 const moonRouter = require("./moons");
 apiRouter.use("/moons", moonRouter);
+
+
 
 apiRouter.use((error, req, res, next) => {
   error.error == "Unauthorized" && res.status(401);
