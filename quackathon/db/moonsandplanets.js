@@ -1545,8 +1545,23 @@ const moonData = [
 },
 
 ]
+const dwarfData = [
+  {
+    // name: "Mercury",
+    // name_origin: "Mercury is named after the Roman God of swift travel, as it is the fastest moving planet in the night sky.",
+    // radius: 2440.00,
+    // orbit: "88 Earth Days",
+    // rotation: "59 Hours",
+    // sun_distance: "58 million km",
+    // type: "rocky",
+    // moon_num: 0,
+    // facts: ["Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.", "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.", "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "]
+
+}
+]
 
 module.exports = {
 planetData,
-moonData
+moonData,
+dwarfData
 };

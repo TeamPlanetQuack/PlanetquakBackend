@@ -13,8 +13,11 @@ async function dropTables() {
     console.log("Starting to drop tables...");
     await client.query(`
     DROP TABLE IF EXISTS questions;
+    DROP TABLE IF EXISTS dwarf;
     DROP TABLE IF EXISTS moons;
     DROP TABLE IF EXISTS planets;
+    DROP TYPE IF EXISTS dwarf_name;
+    DROP TYPE IF EXISTS dwarf_type;
     DROP TYPE IF EXISTS planet_name;
     DROP TYPE IF EXISTS planet_type;
     `);
@@ -31,6 +34,8 @@ async function createTables(){
     await client.query(`
     CREATE TYPE planet_name AS ENUM ('Mercury', 'Mars', 'Earth', 'Venus', 'Jupiter', 'Saturn', 'Uranus', 'Neptune');
     CREATE TYPE planet_type AS ENUM ('gas', 'rocky');
+    CREATE TYPE dwarf_name AS ENUM ('Pluto', 'Ceres', 'Makemake', 'Haumea', 'Eris');
+    CREATE TYPE dwarf_type AS ENUM ('gas', 'rocky');
 
     CREATE TABLE planets (
       id SERIAL PRIMARY KEY,
@@ -54,12 +59,26 @@ async function createTables(){
       moon_radius DECIMAL(10,2)
     );
 
+    CREATE TABLE dwarf (
+      id SERIAL PRIMARY KEY,
+      name dwarf_name,
+      name_origin VARCHAR(255),
+      radius DECIMAL(10,2),
+      orbit VARCHAR(255),
+      rotation VARCHAR(255),
+      sun_distance VARCHAR(255),
+      type planet_type,
+      facts TEXT[]
+  );
+
     CREATE TABLE questions (
       id SERIAL PRIMARY KEY,
       question text NOT NULL,
       correct_answer text NOT NULL,
       incorrect_answers TEXT [] NOT NULL
     );
+
+
     `);
     console.log("Finished building tables");
   } catch (error) {
