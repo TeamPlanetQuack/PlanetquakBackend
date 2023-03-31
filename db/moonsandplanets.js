@@ -1547,15 +1547,15 @@ const moonData = [
 ]
 const dwarfData = [
   {
-    // name: "Mercury",
-    // name_origin: "Mercury is named after the Roman God of swift travel, as it is the fastest moving planet in the night sky.",
-    // radius: 2440.00,
-    // orbit: "88 Earth Days",
-    // rotation: "59 Hours",
-    // sun_distance: "58 million km",
-    // type: "rocky",
-    // moon_num: 0,
-    // facts: ["Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.", "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.", "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "]
+    name: "Pluto",
+    name_origin: "Pluto is the only world (so far) named by an 11-year-old girl. In 1930, Venetia Burney of Oxford, England, suggested to her grandfather that the new discovery be named for the Roman god of the underworld.",
+    radius: 1151,
+    orbit: "90,530 Earth Days",
+    rotation: "153 Hours",
+    sun_distance: "58 million km",
+    type: "rocky",
+    moon_num: 0,
+    facts: ["Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.", "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.", "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "]
 
 }
 ]

@@ -1,5 +1,6 @@
 module.exports = {
     ...require("./moons"),
-    ...require("./planets")
+    ...require("./planets"),
+    ...require("./dwarf_planets")
   };
   
