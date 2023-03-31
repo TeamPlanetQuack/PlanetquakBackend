@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { getAllDwarfPlanets, getDwarfPlanetById, getDwarfPlanetByName } = require("../db/planets");
+const { getAllDwarfPlanets, getDwarfPlanetById, getDwarfPlanetByName } = require("../db/dwarf_planets");
 const dwarfRouter = express.Router();
 
 dwarfRouter.use((req, res, next) => {

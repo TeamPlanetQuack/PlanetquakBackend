@@ -152,48 +152,48 @@ async function testDB(){
   console.log("Starting to test database");
 
   console.log("all planets");
-  const allPlanets= await getAllPlanets()
-  console.log(allPlanets, "All the planets")
+  // const allPlanets= await getAllPlanets()
+  // console.log(allPlanets, "All the planets")
 
   console.log("all dwarf planets");
   const allDwarfPlanets= await getAllDwarfPlanets()
   console.log(allDwarfPlanets, "All the dwarf planets")
 
   console.log("planet name");
-  const planetName= await getPlanetByName("Mercury")
-  console.log(planetName, "Planet name")
+  // const planetName= await getPlanetByName("Mercury")
+  // console.log(planetName, "Planet name")
 
   console.log("getting moon by id");
-  const moonId= await getMoonById(2)
-  console.log(moonId, "this is moon 2")
+  // const moonId= await getMoonById(2)
+  // console.log(moonId, "this is moon 2")
 
   console.log("all the moons");
-  const allMoons= await getAllMoons()
-  console.log(allMoons, "All the moons")
+  // const allMoons= await getAllMoons()
+  // console.log(allMoons, "All the moons")
 
   console.log("Get moons by planet id")
-  const planetMoon= await getMoonsByPlanetId(4)
-  console.log(planetMoon, "moons for mars")
+  // const planetMoon= await getMoonsByPlanetId(4)
+  // console.log(planetMoon, "moons for mars")
 
   console.log("get moon by name")
-  const moonName= await getMoonByName("Moon")
-  console.log(moonName, "should be our moon")
+  // const moonName= await getMoonByName("Moon")
+  // console.log(moonName, "should be our moon")
 
   console.log("getting small moons")
-  const smallMoons= await getMoonsSmallerThan(2)
-  console.log(smallMoons, "moons smaller then 2km")
+  // const smallMoons= await getMoonsSmallerThan(2)
+  // console.log(smallMoons, "moons smaller then 2km")
 
   console.log("getting large moons")
-  const largeMoons= await getMoonsBiggerThan(1000)
-  console.log(largeMoons, "moons bigger then 1000km")
+  // const largeMoons= await getMoonsBiggerThan(1000)
+  // console.log(largeMoons, "moons bigger then 1000km")
 
   console.log("Counting moons on planets")
-  const jupCount= await countMoonsByPlanetId(5)
-  console.log(jupCount, "are how many moons Jupiter has")
+  // const jupCount= await countMoonsByPlanetId(5)
+  // console.log(jupCount, "are how many moons Jupiter has")
 
   console.log("Counting moons on planets")
-  const satCount= await countMoonsByPlanetId(6)
-  console.log(satCount, "are how many moons Saturn has")
+  // const satCount= await countMoonsByPlanetId(6)
+  // console.log(satCount, "are how many moons Saturn has")
 }
 
 buildingDB()

@@ -1,13 +1,13 @@
 const { client } = require("./client");
 
 async function getAllDwarfPlanets() {
+
   try {
     const { rows } = await client.query(
       `SELECT *
             FROM dwarf;
           `
     );
-
     return rows;
   } catch (error) {
     throw error;
