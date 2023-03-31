@@ -63,7 +63,7 @@ async function createTables(){
     CREATE TABLE dwarf (
       id SERIAL PRIMARY KEY,
       name dwarf_name,
-      name_origin VARCHAR(255),
+      name_origin VARCHAR(500),
       radius DECIMAL(10,2),
       orbit VARCHAR(255),
       rotation VARCHAR(255),
