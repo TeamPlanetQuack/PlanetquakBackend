@@ -15,7 +15,7 @@ const planetData = [
   },
   {
     name: "Venus",
-      name_origin: "Venus is named after the Roman God of love and beauty due to it being the brightest object in the sky aside from the Sun and the Moon.",
+      name_origin: "Venus is named after the Roman Goddess of love and beauty due to it being the brightest object in the sky aside from the Sun and the Moon.",
       radius: 6050.00,
       orbit: "225 Earth Days",
       rotation: "243 Earth Days",
