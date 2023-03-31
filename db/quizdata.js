@@ -132,7 +132,7 @@ const quizQuestions = [
     incorrect_answers: ["5,625 earth days", "12 earth days", "612 earth days"],
   },
   {
-    question: "What planet is named after the Greed God of the sky?",
+    question: "What planet is named after the Greek God of the sky?",
     correct_answer: "Uranus",
     incorrect_answers: ["Mercury", "Neptune", "Saturn"],
   },

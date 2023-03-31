@@ -15,7 +15,7 @@ const planetData = [
   },
   {
     name: "Venus",
-      name_origin: "Venus is named after the Roman God of love and beauty due to it being the brightest object in the sky aside from the Sun and the Moon.",
+      name_origin: "Venus is named after the Roman Goddess of love and beauty due to it being the brightest object in the sky aside from the Sun and the Moon.",
       radius: 6050.00,
       orbit: "225 Earth Days",
       rotation: "243 Earth Days",
@@ -1546,19 +1546,7 @@ const moonData = [
 
 ]
 const dwarfData = [
-  {
-    name: "Pluto",
-    name_origin: "Pluto is the only world (so far) named by an 11-year-old girl. In 1930, Venetia Burney of Oxford, England, suggested to her grandfather that the new discovery be named for the Roman god of the underworld.",
-    radius: 1151,
-    orbit: "90,530 Earth Days",
-    rotation: "153 Hours",
-    sun_distance: "58 million km",
-    type: "rocky",
-    moon_num: 0,
-    facts: ["Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.", "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.", "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "]
-
-}
-]
+  ]
 
 module.exports = {
 planetData,
