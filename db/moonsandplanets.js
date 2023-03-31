@@ -1547,17 +1547,65 @@ const moonData = [
 ]
 const dwarfData = [
   {
-    // name: "Mercury",
-    // name_origin: "Mercury is named after the Roman God of swift travel, as it is the fastest moving planet in the night sky.",
-    // radius: 2440.00,
-    // orbit: "88 Earth Days",
-    // rotation: "59 Hours",
-    // sun_distance: "58 million km",
-    // type: "rocky",
-    // moon_num: 0,
-    // facts: ["Mercury has almost no atmosphere. It gets blown away by solar wind. Instead, it has a very thin exosphere.", "Mercury is covered in craters, like our moon. This is because it doesn't have an atmosphere to break up meteors and protect the surface from the barrage of impacts.", "Mercury orbits the fastest of all the planets around the sun at 47 km/second. "]
+    name: "Pluto",
+    name_origin: "The Disney cartoon character Pluto, Mickey's faithful dog, made his debut in 1930, the same year Tombaugh discovered the dwarf planet. There is speculation that Walt Disney named the animated dog after the recently discovered planet to capitalize on its popularity, but other accounts are less certain of a direct link.",
+    radius: 1151,
+    orbit: "248 years",
+    rotation: "153 Hours",
+    sun_distance: "5.9 billion km",
+    type: "rocky",
+    moon_num: 5,
+    facts: ["Pluto has a thin atmosphere of nitrogen, methane and carbon monoxide. The atmosphere has a blue tint and distinct layers of haze.", "Pluto has 5 moons. The largest, Charon, is so big that Pluto and Charon orbit each other like a double planet.", "Pluto’s surface is far too cold, -378 to -396 degrees F (-228 to -238 C), to sustain life as we know it."]
 
-}
+},
+{
+  name: "Ceres",
+  name_origin: "Ceres is named for the Roman goddess of corn and harvests. The word cereal comes from the same name.",
+  radius: 476,
+  orbit: "1682 Earth days",
+  rotation: "9 Hours",
+  sun_distance: "413 million km",
+  type: "rocky",
+  moon_num: 0,
+  facts: ["Dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter, and it's the only dwarf planet located in the inner solar system. ", "There’s no evidence of an atmosphere on Ceres, only sporadic water vapor—possibly from ice ejected by small impacts.", "In the video game Destiny, Ceres was colonized by an alien race called the Fallen at the end of humanity's Golden Age."]
+
+},
+{
+  name: "Makemake",
+  name_origin: "Makemake was named after the Rapanui god of fertility.",
+  radius: 715,
+  orbit: "111,690 Earth days",
+  rotation: "22.5 Hours",
+  sun_distance: "6847 million km",
+  type: "rocky",
+  moon_num: 1,
+  facts: ["Makemake holds an important place in the history of solar system studies because it – along with Eris – was one of the objects whose discovery prompted the International Astronomical Union to reconsider the definition of a planet and to create the new group of dwarf planets.", "If Earth were the size of a nickel, Makemake would be about as big as a mustard seed.", "We can't see too many details of Makemake's surface from so far away, but it does appear to be a reddish-brownish color, similar to Pluto. "]
+
+},
+{
+  name: "Haumea",
+  name_origin: "Haumea is named after the Hawaiian goddess of fertility.",
+  radius: 620,
+  orbit: "104025 Earth days",
+  rotation: "4 Hours",
+  sun_distance: "6452 million km",
+  type: "rocky",
+  moon_num: 2,
+  facts: ["It is one of the fastest rotating large objects in our solar system. The fast spin distorts Haumea's shape, making this dwarf planet look like a football.", "If Earth were the size of a nickel, Haumea would be about as big as a sesame seed.", "Haumea is the first known Kuiper Belt Object to have rings. Scientists announced the discovery in 2017 after watching the dwarf planet pass in front of a star."]
+
+},
+{
+  name: "Eris",
+  name_origin: "Eris is named for the ancient Greek goddess of discord and strife. The name fits since Eris remains at the center of a scientific debate about the definition of a planet.",
+  radius: 1163,
+  orbit: "203,105 Earth days",
+  rotation: "25.9 Hours",
+  sun_distance: "10.125 billion km",
+  type: "rocky",
+  moon_num: 1,
+  facts: ["If the Earth were the size of a nickel, Eris would be about as big as a popcorn kernel.", "Eris most likely has a rocky surface similar to Pluto. Scientists think surface temperatures vary from about -359 degrees Fahrenheit (-217 degrees Celsius) to -405 degrees Fahrenheit (-243 degrees Celsius).", "The dwarf planet is often so far from the Sun that its atmosphere collapses and freezes, falling to the surface as snow. As it gets closest to the Sun in its faraway orbit, the atmosphere thaws."]
+
+},
 ]
 
 module.exports = {
