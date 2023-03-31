@@ -1546,16 +1546,7 @@ const moonData = [
 
 ]
 const dwarfData = [
-  {
-    name_origin: "Pluto is the only world (so far) named by an 11-year-old girl. In 1930, Venetia Burney of Oxford, England, suggested to her grandfather that the new discovery be named for the Roman god of the underworld.",
-    radius: 1151,
-    orbit: "90,530 Earth Days",
-    rotation: "153 Hours",
-    sun_distance: "58 million km",
-    type: "rocky",
-    moon_num: 0,
-    facts: ["Mercury has almost no atmosphe"]}
-]
+  ]
 
 module.exports = {
 planetData,

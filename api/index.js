@@ -21,7 +21,8 @@ apiRouter.use("/planets", planetRouter);
 const moonRouter = require("./moons");
 apiRouter.use("/moons", moonRouter);
 
-
+const dwarfRouter = require("./dwarf_planets");
+apiRouter.use("/dwarf_planets", dwarfRouter);
 
 apiRouter.use((error, req, res, next) => {
   error.error == "Unauthorized" && res.status(401);

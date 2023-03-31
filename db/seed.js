@@ -2,7 +2,8 @@ const { client } = require("./client");
 const bcrypt = require("bcrypt");
 const {getAllPlanets, createPlanet, getPlanetByName} = require("./index");
 const { createMoon, getMoonById, getAllMoons, getMoonsByPlanetId, getMoonByName, getMoonsSmallerThan, getMoonsBiggerThan, countMoonsByPlanetId } = require("./moons");
-const { planetData, moonData } = require("./moonsandplanets");
+const { planetData, moonData, dwarfData } = require("./moonsandplanets");
+const {getAllDwarfPlanets, createDwarfPlanet, getDwarfPlanetByName} = require("./dwarf_planets");
 const { quizQuestions } = require("./quizdata");
 const { createQuestion } = require("./questions");
 
@@ -110,6 +111,17 @@ async function createInitialMoons(){
 throw error;
   }
 }
+async function createInitialDwarfPlanets(){
+  try {
+
+    console.log("Starting to create dwarf planets")
+    await Promise.all(dwarfData.map(createDwarfPlanet))
+    console.log("Finished creating dwarf planets")
+
+  } catch (error) {
+throw error;
+  }
+}
 async function createInitialQuestions(){
   try {
 
@@ -129,6 +141,7 @@ async function buildingDB() {
     await createTables();
     await createInitialPlanets();
     await createInitialMoons();
+    await createInitialDwarfPlanets();
     await createInitialQuestions();
   } catch (error) {
     console.log("error during building");
@@ -141,6 +154,10 @@ async function testDB(){
   console.log("all planets");
   const allPlanets= await getAllPlanets()
   console.log(allPlanets, "All the planets")
+
+  console.log("all dwarf planets");
+  const allDwarfPlanets= await getAllDwarfPlanets()
+  console.log(allDwarfPlanets, "All the dwarf planets")
 
   console.log("planet name");
   const planetName= await getPlanetByName("Mercury")
