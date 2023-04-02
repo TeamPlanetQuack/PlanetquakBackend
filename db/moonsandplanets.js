@@ -1568,7 +1568,7 @@ const dwarfData = [
  sun_distance: "413 million km",
  type: "rocky",
  moon_num: 0,
- facts: ["Dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter, and it's the only dwarf planet located in the inner solar system. ", "There’s no evidence of an atmosphere on Ceres, only sporadic water vapor—possibly from ice ejected by small impacts.", "In the video game Destiny, Ceres was colonized by an alien race called the Fallen at the end of humanity's Golden Age."]
+ facts: ["Dwarf planet Ceres is the largest object in the asteroid belt between Mars and Jupiter, and it's the only dwarf planet located in the inner solar system. ", "There’s no evidence of an atmosphere on Ceres, only sporadic water vapor—possibly from ice ejected by small impacts.", "In the video game, Destiny, Ceres was colonized by an alien race called the Fallen at the end of humanity's Golden Age."]
 
 
 },

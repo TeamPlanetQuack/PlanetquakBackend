@@ -190,6 +190,37 @@ const quizQuestions = [
     correct_answer: "Uranus",
     incorrect_answers: ["Jupiter", "Mars", "Neptune"],
   },
+  {
+    question:
+      "What dwarf planet has 5 moons?",
+    correct_answer: "Pluto",
+    incorrect_answers: ["Haumea", "Ceres", "Eris"],
+  },
+  {
+    question:
+      "What dwarf planet was featured in the video game, Destiny?",
+    correct_answer: "Ceres",
+    incorrect_answers: ["Pluto", "Makemake", "Eris"],
+  },
+  {
+    question:
+      "What dwarf planet was named after the Rapanui God of fertility?",
+    correct_answer: "Makemake",
+    incorrect_answers: ["Ceres", "Pluto", "Eris"],
+  },
+  {
+    question:
+      "What dwarf planet was named after the Hawaiian goddess of fertility?",
+    correct_answer: "Haumea",
+    incorrect_answers: ["Makemake", "Pluto", "Ceres"],
+  },
+  {
+    question:
+      "What dwarf planet is named for the ancient Greek goddess of discord and strife?",
+    correct_answer: "Eris",
+    incorrect_answers: ["Makemake", "Haumea", "Ceres"],
+  }
+  
 ];
 
 
