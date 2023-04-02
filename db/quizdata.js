@@ -186,7 +186,7 @@ const quizQuestions = [
   },
   {
     question:
-      "What planets' moons (besides earth) are not named after Greek mythology? ",
+      "What planets' moons (besides earth) are not named after Greek or Roman mythology? ",
     correct_answer: "Uranus",
     incorrect_answers: ["Jupiter", "Mars", "Neptune"],
   },
@@ -220,7 +220,7 @@ const quizQuestions = [
     correct_answer: "Eris",
     incorrect_answers: ["Makemake", "Haumea", "Ceres"],
   }
-  
+
 ];
 
 
